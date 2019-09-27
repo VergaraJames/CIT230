@@ -17,12 +17,7 @@ footer {
     font-size: 12px;
     text-align: center;
     padding: 1.5rem;
-}
-
-img {
-    float: right;
-    margin: 10px;
-    border: 1px solid #000;
+    border-radius: 20px;
 }
 
 h1 {
@@ -35,8 +30,15 @@ h1 {
     width: 140px;
     height: 140px;
     margin: -80px 15rem 0 auto;
+    border-radius: 20px;
 }
 
 #currentdate {
     color: darkorange;
+}
+
+.otros {
+    float: right;
+    margin: 10px;
+    border: 1px solid #000;
 }
