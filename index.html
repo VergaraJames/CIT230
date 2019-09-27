@@ -1,16 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
     <meta charset="utf-8">
-    <!--This meta tag provides control over the width and scale of the page in the browser -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CIT 230 | James Vergara Rincon | BYU-Idaho</title>
-    <meta name="description" content="Assignment portal page. James Vergara Rincon, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
-
-    <link rel="stylesheet" href="styles/normalize.css">
-
-    <link rel="stylesheet" href="styles/main.css">
+    <title>CIT 230 | James Vergara | BYU-I</title>
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css">
 </head>
 
 <body>
@@ -19,17 +16,18 @@
             <h1>James Vergara Rincon</h1>
         </div>
     </header>
+    <nav>
+
+    </nav>
     <div id="figure">
-        <img src="images/fotoJVR.jpg" alt="James Vergara R." width=140 px>
+        <img src="images/fotoJVR.jpg" alt="James Vergara R.">
         <!--
             <img src="images/fotoJVR.jpg" alt="James Vergara R." style="float:right;width:140px;height:140px;">
 -->
     </div>
-
-
     <div id="main">
         <main>
-            <h2>CIT 230 - Assignment Portal</h2><br>
+            <h1>CIT 230 - Assignment Portal</h1><br>
 
             <div id="content">
                 <ul>
@@ -45,14 +43,11 @@
 
     <div id="footer">
         <footer>
-            <p> &copy;2019 | James Vergara Rincon |<a href="http://www.byui.edu/online/"> BYU-Idaho Online Learning</a></p>
-            <p>Current Date: <span id="currentdate"></span></p>
-            <script language="Javascript">
-                document.write("Last Updated On: " + document.lastModified + "");
-            </script>
+            &copy;2019 | James Vergara Rincon |
+            <a href="http://www.byui.edu/online/"> BYU-Idaho Online Learning </a> | Current Date: <span id="currentdate"></span>
         </footer>
     </div>
-    <script src="Styles/main.js"></script>
+    <script src="js/currentdate.js"></script>
 </body>
 
 </html>
