@@ -17,6 +17,15 @@
 #currentdate {
     color: darkorange;
 }
+.quote {
+    text-align: center;
+    background-color: var(--color6);
+    font-family: Lobter, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    color: var(--color10);
+    padding: 10px;
+}
 
 .sec1 {
     align-items: center;
