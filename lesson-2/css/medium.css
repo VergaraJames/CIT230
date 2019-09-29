@@ -1,10 +1,21 @@
-/* Desktop Views ****************************/
+/* Tablet Views *** Medium Col 2 **********/
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 37.5em) {
     main {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    section:nth-child(2) {
+        display: block;
     }
     section:nth-child(3) {
-        grid-column: span 1;
+        grid-column: span 2;
+    }
+    main picture {
+        display: block;
+    }
+    main section picture img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #bbb;
     }
 }
