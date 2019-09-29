@@ -17,13 +17,14 @@
 #currentdate {
     color: darkorange;
 }
+
 .quote {
     text-align: center;
-    background-color: var(--color6);
+    background-color: var(--color5);
     font-family: Lobter, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.0em;
     line-height: 1.1em;
-    color: var(--color10);
+    color: var(--color3);
     padding: 10px;
 }
 
