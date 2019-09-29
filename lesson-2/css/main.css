@@ -18,6 +18,26 @@
     color: darkorange;
 }
 
+.sec1 {
+    align-items: center;
+    text-align: left;
+    font-family: Lusitana, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    color: var(--color2);
+    padding: 10px;
+}
+
+.sec2 {
+    align-items: center;
+    text-align: left;
+    font-family: Karla, sans-serif;
+    font-size: 1em;
+    line-height: 1.1em;
+    color: var(--color3);
+    padding: 10px;
+}
+
 
 /* new css */
 
