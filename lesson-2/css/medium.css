@@ -1,21 +1,24 @@
-/* Tablet Views *** Medium Col 2 **********/
+/* Medium Views *** Medium Col 2 **********/
 
-@media only screen and (min-width: 37.5em) {
-    main {
-        grid-template-columns: 1fr 1fr;
+@media only screen and (max-width: 62.5em) {
+    #grids-box {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #bfc0c0;
+        padding: 10px;
+        margin: 10px;
     }
-    section:nth-child(2) {
-        display: block;
+    h1 {
+        font-size: 2em;
     }
-    section:nth-child(3) {
-        grid-column: span 2;
+    h2 {
+        font-size: 1em;
+        color: navy
     }
-    main picture {
-        display: block;
+    h3 {
+        font-size: 2em;
     }
-    main section picture img {
-        width: 100%;
-        height: auto;
-        border: 1px solid #bbb;
+    .image {
+        width: 250px;
     }
 }
