@@ -14,6 +14,24 @@
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
+
+/* Rows and Sections */
+
+#grids-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #bfc0c0;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid-item {
+    border-width: 5px;
+    border-style: double;
+    color: #1b1e4c;
+    border-radius: 10px;
+}
+
 #currentdate {
     color: darkorange;
 }
@@ -22,8 +40,8 @@
     text-align: center;
     background-color: var(--color5);
     font-family: Inconsolata, sans-serif;
-    font-size: 0.7em;
-    line-height: 1.1em;
+    font-size: 1.5em;
+    line-height: 1.5em;
     color: var(--color8);
     padding: 10px;
 }
@@ -58,34 +76,35 @@
     padding: 10px;
 }
 
-
-/* new css */
-
 body {
-    font-size: 16px;
-    font-family: "Sansita", Ubuntu, sans-serif;
+    padding: 20px;
 }
 
 header,
 footer {
     background-color: var(--color2);
     color: #fff;
-    font-size: 12px;
+    font-size: 1em;
     text-align: center;
     padding: 1.5rem;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-
-/* phone or baseline views *** Small Col 1 *****/
-
-main {
-    max-width: 767px;
-    margin: 0 auto;
+h1 {
+    color: whitesmoke;
+    text-align: center;
 }
 
 h2 {
-    color: #536878;
+    color: #1b1e4c;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--color3);
+    font-family: 'Mansalva', cursive;
+    padding: 10px;
 }
 
 main {
@@ -106,41 +125,11 @@ section:nth-child(2) {
     margin: 0.5rem;
 }
 
-.colimage {
+.image {
     box-shadow: 0 0 30px #333;
-}
-
-
-/* Tablet Views *** Medium Col 2 **********/
-
-@media only screen and (min-width: 37.5em) {
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-    section:nth-child(2) {
-        display: block;
-    }
-    section:nth-child(3) {
-        grid-column: span 2;
-    }
-    main picture {
-        display: block;
-    }
-    main section picture img {
-        width: 100%;
-        height: auto;
-        border: 1px solid #bbb;
-    }
-}
-
-
-/* Desktop Views *** Large 3 Col *******/
-
-@media only screen and (min-width: 60em) {
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    section:nth-child(3) {
-        grid-column: span 1;
-    }
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }

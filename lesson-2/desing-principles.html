@@ -7,68 +7,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Design Principles Document - CIT 230 Fall 2019</title>
     <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development">
-    <!--
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" href="css/large.css">
-        <link rel="stylesheet" href="css/medium.css">
--->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
 </head>
 
 <body>
     <header>
         <h1>Design Principles Document</h1>
-        <h2>James Vergara R.</h2>
+        <h1>James Vergara R.</h1>
     </header>
     <main>
-        <section class="sec1">
-            <h2>Hick’s Law</h2>
+        <div id="grids-box">
+            <div class="grid-item">
+                <section class="sec1">
+                    <h2>Contraste</h2>
+                    <p>The contrast highlights the distinct difference between foreground and background colors to improve readability. It not only treats colors but also integrates into the visual hierarchy of font sizes, location of images and content.</p>
+                    <picture>
+                        <img class="image" src="images/Nike.png" alt="Nike web page">
+                    </picture>
+                    <h3>nike.com</h3>
+                    <a class="quote" href="https://www.nike.com/us/en_us/c/jordan"> Nike.com/us</a>
+                    <p>Nike is a company that sells clothes, shoes and a variety of sports items. For its publicity, it uses the pictures of sportspeople, in this case, the image of Michel Jordan.</p>
+                </section>
+            </div>
+            <div class="grid-item">
+                <section class="sec2">
+                    <h2>Alignment</h2>
+                    <picture>
+                        <img class="image" src="images/Alignment.png" alt="Alignment">
+                    </picture>
+                    <h3>mogutable.com/</h3>
+                    <a class="quote" href="https://mogutable.com/"> mogutable.com</a>
+                    <p>Mogutable is a store that sells unique handmade objects for the home. These objects have been classified as favorites of local and international artisans. The creators Yingchi and Yuchen, are originally from Taiwan based in Brooklyn.</p>
+                    <p>Alignment is a design tool and refers to how elements are placed on a page. Form a visual appeal. Promotional texts, decorative or smaller texts, the other types are used strategically. Typically, the alignment applies to two specific
+                        design elements: typography and images. Graphic designers try to create a balance between the two so that both images and text are visually attractive and have a perfect connection. Through good use of alignment, a composition
+                        will appear orderly, clean and readable for an audience.
+                    </p>
+                </section>
+            </div>
+            <div class="grid-item">
+                <section class="sec3">
+                    <h2>Balance</h2>
+                    <p>Balance refers to the fact that there is not too much weight either on one side or the other in both graphics and texts. The elements of art have weight visual weight. Balanced design with a balance to the eye of the beholder.</p>
+                    <h3>marvel.com/</h3>
+                    <picture>
+                        <img class="image" src="images/Balance2.png" alt="Avengers: Endgame">
+                    </picture>
+                    <br>
+                    <a class="quote" href="https://www.marvel.com/movies/avengers-endgame"> Marvel.com</a>
 
-            <p>Hick’s Law says that with every additional choice increases the time required to take a decision.<br> You’ve experienced this countless times at restaurants. Menus with huge options make it difficult to choose your dinner. If it offered two
-                options, making a decision would take much less time. This is similar to the Paradox of Choice—the more choices you give, the easier it is to choose nothing. Both principles come into play with web design.
-            </p>
-            <picture>
-                <img class="colimage" src="images/Hicks_law.png" alt="Hick’s Law">
-            </picture>
-            <p> The more options a user has on your website, the more difficult it is to use (if it’s used at all). We need to eliminate choices. To make a better web design, focus on eliminating distracting options throughout the design process.
-                <br> In an era of infinite choice, people need better filters! If you sell a huge number of products, add better filters for easier decision-making. Wine Library sells a huge amount of wine.
-            </p>
-        </section>
-        <section class="sec2">
-            <h2>Fitt’s Law</h2>
-            <picture>
-                <img class="colimage" src="images/Fitts_Law.png" alt="Spotify makes it easier to hit “Play” than other buttons">
-            </picture>
-            <p>Fitt’s law stipulates that the time required to move to a target area (e.g. click a button) is a function of the distance to the target and the size of the target. In other words, the bigger an object and the closer it is, the easier it is
-                to use. On the mobile phone app, they also place the play button in an easy-to-tap location. Bigger isn’t always better. A button that takes up half the screen isn’t a good idea, and we don’t need a mathematical study to tell us. Even
-                so, Fitt’s Law is a binary logarithm. This means that the predicted results of the usability of an object run along a curve, not a straight line. A tiny button is much easier to click when given a 20% size increase, whereas a very large
-                object, given the same 20% boost in size, won’t deliver the same benefits in usability. This is similar to the rule of target size. The size of a button should be proportional to its expected frequency of use. You can use mouse tracking
-                to see which buttons people use the most, then make popular buttons bigger (easier to hit).
-            </p>
-        </section>
-        <section class="sec3">
-            <h2>Occam’s Razor</h2>
-            <p>When given several competing hypothesis, Occam’s razor urges you to choose the one that makes the fewest assumptions and, thereby, offers the simplest explanation. To put it in the context of web design, Occam’s Razor argues that the simplest
-                solution is usually best. In a post about their Angelpad experience, Pipedrive’s team writes:
-            </p>
-            <p class="quote">"The Angelpad team and mentors challenged us in many ways. “You have too many things on your home page” was something we didn’t agree with at first, but we’re happy to test. And it turned out we had been wrong indeed. We removed 80% of the
-                content, and left one sign-up button and one Learn More link on the home page. Conversion to sign up increased by 300%."
-            </p>
-            <picture>
-                <img class="colimage" src="images/Occam_Razor.png" alt="Spotify makes it easier to hit “Play” than other buttons">
-            </picture>
-            <p> It’s not just about the looks, but also about how it works. Some companies—like 37 Signals—have turned “simple” into a business model. Here’s a quote from the book Rework, written by founders Jason Fried:
-            </p>
-            <p class="quote">"Lots of people hate us because our products do less than the competition. They’re insulted when we refuse to include their pet feature. But we’re just as proud of what our products don’t do as we are of what they do. We design them to be
-                simple because we believe most software is too complex: too many features, too many buttons, too much confusion."
-            </p>
-            Simple, minimalist design does not guarantee that the design will work. But, in my experience, simple is always better than the opposite—and, hence, we should strive to simplify our web designs.
-            <p>
-
-            </p>
-
-        </section>
+                    <p>Marvel is a cinematographic company that is in charge of advertising the films in cinematographic billboard. It exhibits trailers of its films to invite the general public to select its films.</p>
+                    <picture>
+                        <img class="image" src="images/Balance.png" alt="Marvel movies">
+                    </picture>
+                </section>
+            </div>
+        </div>
     </main>
     <div id="footer">
         <footer>
