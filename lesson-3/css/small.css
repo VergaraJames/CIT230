@@ -1,28 +1,5 @@
-@media only screen and (max-width: 32.5em) {
-    nav ul {
-        display: flex;
-    }
-    nav ul li {
-        flex: 1 1 100%;
-    }
-    #grids-box {
-        display: grid;
-        grid-template-columns: auto;
-        background-color: #bfc0c0;
-        padding: 10px;
-        margin: 10px;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1em;
-        color: red;
-    }
-    h3 {
-        font-size: 2em;
-    }
-    .image {
-        width: 150px;
+@media only screen and (max-width: 500px) {
+    .top-container {
+        grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
     }
 }

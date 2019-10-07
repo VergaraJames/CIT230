@@ -1,24 +1,21 @@
-/* Medium Views *** Medium Col 2 **********/
+/* Media Queries */
 
-@media only screen and (max-width: 62.5em) {
-    #grids-box {
-        display: grid;
-        grid-template-columns: auto auto;
-        background-color: #bfc0c0;
-        padding: 10px;
-        margin: 10px;
+@media only screen and (max-width: 700px) {
+    .top-container {
+        grid-template-areas: 'showcase showcase' 'top-box-a top-box-b';
     }
-    h1 {
-        font-size: 2em;
+    .showcase h1 {
+        font-size: 2.5rem;
     }
-    h2 {
-        font-size: 1em;
-        color: navy
+    .main-nav ul {
+        grid-template-columns: 1fr;
     }
-    h3 {
-        font-size: 2em;
+    .info {
+        grid-template-columns: 1fr;
     }
-    .image {
-        width: 250px;
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
     }
 }
