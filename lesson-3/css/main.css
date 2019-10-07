@@ -63,14 +63,6 @@ footer {
     color: #FFD600;
 }
 
-.btn {
-    background: #333;
-    color: #fff;
-    padding: 0.6rem 1.3rem;
-    text-decoration: none;
-    border: 0;
-}
-
 img {
     max-width: 30%;
     box-shadow: 0 0 30px #333;
@@ -155,60 +147,6 @@ img {
 }
 
 
-/* Showcase */
-
-.showcase {
-    grid-area: showcase;
-    min-height: 400px;
-    /*    background: url(https://image.ibb.co/kYJK8x/showcase.jpg); */
-    background: url("img/keyboard.jpeg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-}
-
-.showcase h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-    color: #fff;
-}
-
-.showcase p {
-    font-size: 1.3rem;
-    margin-top: 0;
-    color: #fff;
-}
-
-
-/* Top Box */
-
-.top-box {
-    background: #ddd;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    box-shadow: var(--shadow);
-    padding: 1.5rem;
-}
-
-.top-box .topic {
-    font-size: 2.5rem;
-}
-
-.top-box-a {
-    grid-area: top-box-a;
-}
-
-.top-box-b {
-    grid-area: top-box-b;
-}
-
-
 /* Boxes */
 
 .boxes {
@@ -245,97 +183,9 @@ img {
     padding: 1rem;
 }
 
-table {
-    border: 1px solid grey;
-    border-collapse: collapse;
-    box-shadow: 10px 10px 10px rgb(98, 140, 166);
-}
-
-thead,
-tfoot {
-    background-color: #7fb9c2;
-}
-
-thead {
-    font-size: 1.25rem;
-}
-
-tfoot {
-    font-size: .75rem;
-    text-align: center;
-}
-
-td,
-th {
-    text-align: center;
-    border: 1px solid grey;
-    padding: 10px;
-}
-
-#highlight {
-    background-color: #628ca6;
-    color: white;
-}
-
-tbody th {
-    background-color: #628ca6;
-    color: white;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #e7ffed;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #e7f0ed;
-}
-
 a {
     text-decoration: none;
     color: black;
-}
-
-form {
-    margin: 0;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    max-width: 93%;
-}
-
-fieldset {
-    border-radius: .5em;
-}
-
-label {
-    display: block;
-    margin: .5em;
-    font-size: .8em;
-}
-
-label span {
-    display: block;
-    padding-top: .5em;
-    padding-bottom: .2em;
-}
-
-#userOutput {
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    background-color: lightgrey;
-    border-radius: 10px;
-    padding: 5px;
-    width: 800px;
-}
-
-pre {
-    font-size: .75rem;
-}
-
-#canvas {
-    border: 1px;
-    border-style: solid;
-    border-color: black;
 }
 
 .bold_Text {
@@ -343,23 +193,4 @@ pre {
     font: bold;
     color: #3E689D;
     font-size: 1.1rem;
-}
-
-.fieldmouse {
-    width: 170px;
-    height: 100px;
-    border: 1px solid black;
-    margin: 10px;
-    float: left;
-    padding: 30px;
-    text-align: center;
-    color: #fff;
-    background-color: #3E689D;
-}
-
-.view {
-    background-color: black;
-    height: 50px;
-    width: 95%;
-    overflow: hidden;
 }
