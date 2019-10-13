@@ -1,0 +1,11 @@
+            @media only screen and (max-width: 500px) {
+                .top-container {
+                    grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
+                }
+                .nav-botton {
+                    display: inline-block;
+                }
+                .hideMenu {
+                    display: none;
+                }
+            }
