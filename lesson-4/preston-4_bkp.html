@@ -9,20 +9,33 @@
     <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development">
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <!--
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/big.css">
+    <link rel="stylesheet" href="css/small.css">
+    -->
     <link rel="stylesheet" href="../css/normalize.css">
 </head>
 
 <body>
-    <header class="topbanner">
-        <!-- Header -->
-        <img class="logo" src="images/logo.jpg" height="80px">
-
-        <h1 class="title"> Weather Wind Vane</h1>
-        <p id="subtitle">Looking at the sky</p>
+    <header>
+        <!-- Info Section -->
+        <div class="logod">
+            <img class="logo" src="images/logo.jpg" height="80px">
+        </div>
+        <div id="hhead">
+            <h1 class="title"> Weather Wind Vane
+            </h1>
+            <p id="subtitle">
+                Looking at the sky
+            </p>
+        </div>
     </header>
+
     <nav>
-        <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <ul class="navigation responsive">
+            <li><a href="#" onclick="toggleMenu()">&#9776 Menu</a></li>
             <li><a href="preston-4.html#">Home</a></li>
             <li><a href="preston-4.html">Preston</a></li>
             <li><a href="#">Soda Spring</a></li>
@@ -34,29 +47,36 @@
 
     <main>
         <div class="wrapper">
+            <!-- Navigation Menu
+                <nav class="main-nav">
+                    -->
             <!-- Info Section 1 -->
-            <section class="infoWide">
+            <section class="info1">
+
                 <div>
                     <h3>weather Sumary</h3>
                     <p>The purpose of the <span class="bold_Text"> Weather Wind Vane </span> site is to provide a weather forecast information service.</p>
                 </div>
             </section>
             <!-- Info Section 2 -->
-            <section class="infoWide">
+            <section class="info1">
+
                 <div>
                     <h3> 5 days forecast</h3>
                     <p>The purpose of the <span class="bold_Text"> Weather Wind Vane </span> site is to provide a weather forecast information service.</p>
                 </div>
             </section>
             <!-- Info Section 3 -->
-            <section class="infoWide">
+            <section class="info1">
+
                 <div>
                     <h3>Article</h3>
                     <p>The purpose of the <span class="bold_Text"> Weather Wind Vane </span> site is to provide a weather forecast information service.</p>
                 </div>
             </section>
             <!-- Info Section 4 -->
-            <section class="infoWide">
+            <section class="info1">
+
                 <div>
                     <h3>Contact information</h3>
                     <p>The purpose of the <span class="bold_Text"> Weather Wind Vane </span> site is to provide a weather forecast information service.</p>
@@ -71,7 +91,7 @@
         <p>James Vergara Rincón</p>
     </footer>
     <script src="../js/currentdate.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
 
 </body>
 

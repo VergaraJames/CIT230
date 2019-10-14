@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab|Cookie|Cormorant+Garamond|Great+Vibes|Inconsolata|Karla|Lobster|Lusitana|Oswald|Sorts+Mill+Goudy');
+
+/* CSS Variables */
+
+ :root {
+    /* Background and fonts colors
+    --color1: #ddd;
+    --color2: #09203F;
+    --color3: #1976d2;
+    --color4: #9575CD;
+    --color5: #B7B7B7;
+    --color6: #000000;
+    --color7: #FFFFFF;
+    --color8: #B71C1C;
+    --color9: #FF9800;
+    --color10: #FFD600;
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --gold: #E5D8C0;
+    --greenolive: #375B59;
+    --bluesoft: #485665;
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+*/
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+body {
+    background: #ccc;
+    line-height: 1.4;
+    margin: 30px 50px;
+    padding: .5rem;
+    font-family: Ubuntu, sans-serif;
+    /* 
+    max-width: 1000px;
+    */
+}
+
+header,
+footer {
+    background-color: #09203F;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #375B59;
+}
+
+#currentdate {
+    color: #FFD600;
+}
+
+img {
+    max-width: 30%;
+    box-shadow: 0 0 30px #333;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 15px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.photo1 {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 15px;
+    box-shadow: 0 0 30px #333;
+    margin: 10px;
+    max-width: 70%;
+    padding-right: 20px;
+    padding-left: 15px;
+    width: 400px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.quote {
+    text-align: center;
+    background-color: #B7B7B7;
+    border-radius: 10px;
+    font-family: Inconsolata, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #B71C1C;
+    padding: 10px;
+    width: 25%;
+    height: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+
+/* Navigation */
+
+.nav-botton {
+    display: none;
+}
+
+.main-nav ul {
+    display: flex;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.main-nav a {
+    background: #ddd;
+    /*
+    display: block;
+    */
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+
+/*
+.nav-link {
+    display: inline;
+}
+*/
+
+.main-nav a:hover {
+    background: #333;
+    color: #fff;
+}
+
+.logodiv img {
+    width: 140px;
+    height: 140px;
+}
+
+.banner {
+    display: grid;
+    flex-direction: row;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+
+#subtitle {
+    text-align: center;
+    color: #1394f6;
+    font-size: 13px;
+}
+
+
+/* Top Container */
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+}
+
+
+/* Boxes */
+
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+    background: #ddd;
+    text-align: left;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+
+/* Info */
+
+.info {
+    background: #ddd;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.info1 {
+    background: #ddd;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bold_Text {
+    font-style: italic;
+    font: bold;
+    color: #3E689D;
+    font-size: 1.1rem;
+}
+
+
+/*
+.hideMenu {
+    display: inline;
+}
+*/

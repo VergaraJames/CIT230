@@ -1,11 +1,13 @@
-            @media only screen and (max-width: 500px) {
-                .top-container {
-                    grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
+            @media only screen and (min-width:349px) {
+                h1 {
+                    font-size: 1.5rem;
                 }
-                .nav-botton {
-                    display: inline-block;
+                #subtitle {
+                    font-size: 16px;
+                    text-align: center;
+                    color: #1394f6;
                 }
-                .hideMenu {
-                    display: none;
+                #banner {
+                    margin-left: 10px;
                 }
             }
