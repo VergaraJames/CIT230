@@ -13,26 +13,40 @@ html {
 }
 
 body {
-    background: #ccc;
     line-height: 1.4;
+    background-color: #ccc;
     margin: 30px 50px;
     padding: .5rem;
     font-family: Ubuntu, sans-serif;
 }
 
+main {
+    display: block;
+}
+
 .wrapper {
-    display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
+}
+
+.wrapper h1 {
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 760px;
+    text-align: center;
 }
 
 .infoWide {
     background: #ddd;
     box-shadow: var(--shadow);
-    display: grid;
-    grid-gap: 30px;
-    padding: 1rem;
+    display: flex;
+    padding: 10px;
     margin: 0 auto;
     max-width: 760px;
+}
+
+.contentbox {
+    background-color: #eee;
 }
 
 header {
@@ -40,8 +54,10 @@ header {
     color: #fff;
     font-size: 1em;
     text-align: center;
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .topbanner {
@@ -62,10 +78,12 @@ footer {
     border-radius: 10px;
 }
 
-#subtitle {
-    text-align: center;
-    color: #1394f6;
-    font-size: 15px;
+.subtitle {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: lawngreen;
+    font-size: .9rem;
+    margin-left: 20px;
 }
 
 .title {
@@ -83,14 +101,15 @@ footer {
 
 nav {
     margin: 0 auto;
-    max-width: 760px;
     background-color: #000;
+    /* Define the width of the nav menu*/
+    max-width: 760px;
 }
 
 .navigation {
     list-style: none;
     text-align: center;
-    padding: 0;
+    padding: 10px;
 }
 
 .navigation li:first-child {
@@ -113,6 +132,7 @@ nav {
 .navigation a:hover {
     color: #000;
     background-color: #fff;
+    font-weight: 700;
 }
 
 .bold_Text {
@@ -124,15 +144,30 @@ nav {
 
 .logo {
     float: left;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     padding-right: 10px;
     padding-left: 10px;
 }
 
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
 
 /* the onclick JS toggles the 
-.repsonsive class from display none (.navigation li) 
+.reponsive class from display none (.navigation li) 
 to display block because the repsonsive class 
 is added to the end of the class list like this in HTML Line #6.
   <ul class="navigation responsive">
@@ -140,23 +175,4 @@ is added to the end of the class list like this in HTML Line #6.
 
 .responsive li {
     display: block;
-}
-
-
-/* Media Query for medium + screens */
-
-@media only screen and (min-width: 32.5em) {
-    .navigation {
-        display: flex;
-    }
-    .navigation li:first-child {
-        display: none;
-    }
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-    .navigation li a {
-        color: yellow;
-    }
 }
