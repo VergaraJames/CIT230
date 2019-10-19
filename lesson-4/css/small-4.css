@@ -1,0 +1,30 @@
+/*
+@media only screen and (min-width: 64em) {
+ 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1em;
+}
+ 
+
+body {
+    font-size: 16px;
+    font-family: "Meriweather Sans", consolas, sans-serif
+}
+  */
+
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #e5d8c0;
+    color: #444;
+    font-style: italic;
+}
+
+
+}

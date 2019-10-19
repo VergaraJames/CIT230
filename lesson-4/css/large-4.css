@@ -1,0 +1,35 @@
+@media only screen and (min-width: 56em) {
+    header img {
+        width: 100%;
+    }
+    .headings h1 {
+        font-size: 3rem;
+    }
+    .subtitle {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-left: 17px;
+    }
+    .contentbox {
+        background-color: #ccc;
+    }
+}
+
+
+/* 64em is also 1028px when basefont is 16px
+
+@media only screen and (min-width:56em) {
+   
+    }
+    nav ul li a {
+        padding: .6rem 1rem;
+        display: block;
+        text-decoration: none;
+        color: #000;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+
+/* end large */
