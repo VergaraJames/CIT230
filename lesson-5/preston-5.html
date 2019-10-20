@@ -8,29 +8,56 @@
     <title>Preston Town Page - CIT 230 Fall 2019</title>
     <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development">
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/large-4.css">
-    <link rel="stylesheet" href="css/medium-4.css">
-    <link rel="stylesheet" href="css/small-4.css">
+
+    <!--Get your own code at fontawesome.com  
+        https://www.w3schools.com/icons/icons_reference.asp -->
+
+    <!--
+     <link rel="stylesheet" href="css/main.css">
+-->
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="../css/normalize.css">
+
+
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.png">
 </head>
+<!--
+            Definir class=topbanner     class=annoucment        id="5  
+            class=responsive
+            class=m  class=wrapper      class="infoWide"        class="contentbox"
+            <div class="contentbox forecast">
+    -->
 
 <body>
     <!-- Header -->
     <header class="topbanner">
+
+        <div class="advice" id="5" style="display:none">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <script>
+            showhide();
+        </script>
         <picture>
             <img class="logo" src="images/logo.png">
         </picture>
-        <section class="headings">
+        <section class="header">
             <h1 class="title"> Weather Wind Vane</h1>
             <p class="subtitle">Looking at the sky</p>
         </section>
+
     </header>
     <nav>
+        <!--  <button onclick="toggleMenu()">&#9776; </button> -->
         <ul class="navigation responsive">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="preston-4.html#">Home</a></li>
-            <li><a href="preston-4.html">Preston</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="preston-5.html">Preston</a></li>
             <li><a href="#">Soda Spring</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -44,30 +71,85 @@
             <h1> Preston Idaho </h1>
             <section class="infoWide">
                 <div class="contentbox">
-                    <h3>Hero w/ weather summary</h3>
-                    <p>The <span class="bold_Text"> Weather Wind Vane </span> site information.</p>
+                    <div class="herodiv">
+                        <img src="images/preston.jpg">
+                        <section class="stats">
+                            <h2>Weather Summary</h2>
+                            <p>Currently: Light rain</p>
+                            <p>High: 36 &#8457;</p>
+                            <p>Wind Chill: 0 </p>
+                            <p>Humidity: 70%</p>
+                            <p>Wind Speed: 7 mph</p>
+                        </section>
+                    </div>
                 </div>
             </section>
             <!-- Info Section 2 -->
             <section class="infoWide">
                 <div class="contentbox forecast">
-                    <h3> 5 days forecast</h3>
-                    <p>The <span class="bold_Text"> Weather Wind Vane </span> site information.</p>
+                    <h1> Forecast </h1>
+                    <table>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                        </tr>
+                        <tr>
+                            <td><img class="icon" src="images/sun.jpg"><br> 40&#8457;</td>
+                            <td><img class="icon" src="images/rain.png"><br> 38&#8457;</td>
+                            <td><img class="icon" src="images/rain2.jpg"><br> 36&#8457;</td>
+                            <td><img class="icon" src="images/sun.jpg"><br> 38&#8457;</td>
+                            <td><img class="icon" src="images/rain2.jpg"><br> 36&#8457;</td>
+                        </tr>
+                    </table>
                 </div>
             </section>
             <!-- Info Section 3 -->
             <section class="infoWide">
                 <div class="contentbox">
-                    <h3>Article</h3>
-                    <p>The <span class="bold_Text"> Weather Wind Vane </span> site information.</p>
+                    <img class="forest" src="images/huracan.jpg">
+                    <h2>Article Title</h2>
+                    <p>By: James Vergara</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla pariatur. Excepteur sint
+                    </p>
                 </div>
             </section>
             <!-- Info Section 4 -->
             <section class="infoWide">
-                <div class="contentbox">
-                    <h3>Contact information</h3>
-                    <p>The <span class="bold_Text"> Weather Wind Vane </span> site information.</p>
-                </div>
+                <h2>Weather Wind Vane</h2>
+                <img id="hide" class="map" src="images/Preston_map.png">
+
+                <table>
+                    <tr>
+                        <h3>Contact information</h3>
+                        <p><i class="fas fa-map-marker-alt" style="font-size:24px"></i> 165 N 8th W, Preston, ID 83263, Estados Unidos </p>
+                        <p><i class="fas fa-phone" style="font-size:24px"></i> +1-801-123-1234</p>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.twitter.com" target="_blank"><img class="icon" src="images/twitter2.png" alt="Twitter"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.facebook.com" target="_blank"><img class="icon" src="images/facebook2.png" alt="facebook"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.pinterest.com" target="_blank"><img class="icon" src="images/pinterest.png" alt="pinterest"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.youtube.com" target="_blank"><img img class="icon" src="images/youtube.png" alt="youtube"></a>
+                        </td>
+                        <td>
+                            <a href="https://https://www.linkedin.com" target="_blank"><img img class="icon" src="images/linkedn2.png" alt="linkedn"></a>
+                        </td>
+                    </tr>
+                </table>
+
+
+
             </section>
 
         </div>
