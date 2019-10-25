@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <title>JAMES VERGARA RINCON | https://vergarajames.github.io/cit261/ </title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navigation Menu -->
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="https://vergarajames.github.io/cit261/">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="http://www.byui.edu/" target="_blank">BYU-I</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="boxes">
+            <!-- Display 3 pictures or colors when wep page start -->
+            <div class="display"></div>
+            <div class="display1"></div>
+            <div class="display2"></div>
+            <div class="loader">
+                <ul>
+                    <li>W</li>
+                    <li>E</li>
+                    <li>A</li>
+                    <li>T</li>
+                    <li>H</li>
+                    <li>E</li>
+                    <li>R</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Boxes Section 1 -->
+        <section class="boxes">
+            <!-- Box 1 -->
+            <div class="box">
+                <!-- Information and request the city or Zip Number -->
+                <div id="searchContainer">
+                    <h2>Weather WEB SITE</h2>
+                    <p> <span class="bold_Text"> Instructions: </span>To get the information about the weather, please write the name of the City or Zip Number. (Examples:) New York, 10001, Lima, Dubai, Portland, 90210.</p>
+                    <input class="searchControl" type="text" placeholder="City Name or Zipcode" id="searchInput">
+                    <button class="searchControl" id="searchBtn">Search</button>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="box1">
+                <div id="weatherContainer">
+                    <!-- MAin output infotmation -->
+                    <div id="weatherDescription">
+                        <h1 id="cityHeader"></h1>
+                        <h1 id="countryHeader"></h1>
+                        <div id="weatherMain">
+                            <div id="temperature"></div>
+                            <div id="weatherDescriptionHeader"></div>
+                            <div><img id="documentIconImg"></div>
+                        </div>
+                        <hr>
+                        <div id="windSpeed" class="bottom-details"></div>
+                        <div id="humidity" class="bottom-details"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="box">
+                <p> Weather forecast in the next 5 hours </p>
+                <div id="date"></div>
+                <div id="time"></div>
+                <table>
+                    <tr>
+                        <th width="10%">Hours Late</th>
+                        <th width="10%">Temperature</th>
+                        <th width="30%">Description</th>
+                    </tr>
+                    <tr>
+                        <td><span class="bold_Text"> 1 </span></td>
+                        <td>
+                            <div id="field12"></div>
+                        </td>
+                        <td>
+                            <div id="field13"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="bold_Text"> 2 </span></td>
+                        <td>
+                            <div id="field22"></div>
+                        </td>
+                        <td>
+                            <div id="field23"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="bold_Text"> 3 </span></td>
+                        <td>
+                            <div id="field32"></div>
+                        </td>
+                        <td>
+                            <div id="field33"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="bold_Text"> 4 </span></td>
+                        <td>
+                            <div id="field42"></div>
+                        </td>
+                        <td>
+                            <div id="field43"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="bold_Text"> 5 </span></td>
+                        <td>
+                            <div id="field52"></div>
+                        </td>
+                        <td>
+                            <div id="field53"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="box">
+                <p> This is the information stored in the Local Storage </p>
+                <div id="outputLocal">
+                    <!-- to show the information stored in Local Storage -->
+                    <div id="cityLocal"></div>
+                    <div id="countryLocal"></div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+    <script src="styles/script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>James Vergara R. &copy; 2019</p>
+
+        <div class="media">
+            <!-- to show the media Icons -->
+            <ul>
+                <li>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

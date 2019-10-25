@@ -1,47 +1,343 @@
-@media only screen and (min-width: 67em) {
-    footer {
-        max-width: 985px;
-        margin-left: auto;
-        margin-right: auto;
+    @import url('https://fonts.googleapis.com/css?family=Antic+Slab|Cookie|Cormorant+Garamond|Great+Vibes|Inconsolata|Karla|Lobster|Lusitana|Oswald|Sorts+Mill+Goudy');
+    /* Fonts - types
+|Cookie
+|Cormorant+Garamond
+|Great+Vibes
+|Inconsolata
+|Karla
+|Lobster
+|Lusitana
+|Oswald
+|Sorts+Mill+Goudy');
+
+Large viewports 64em 
+@media only screen and (min-width: 64em) {
+*/
+    
+    :root {
+        --primary: #ddd;
+        --dark: #333;
+        --light: #fff;
+        --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     }
+    
+    html {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+    }
+    
+    body {
+        line-height: 1.4;
+        padding: .5rem;
+        background: #ccc;
+        margin: 30px 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: black;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-gap: 10px;
+    }
+    
+    .wrapper h1 {
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
     main {
-        max-width: 900px;
+        max-width: 1024px;
+        margin: 0 auto;
+        display: block;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
     }
+    
+    footer {
+        font-size: 0.7em;
+        line-height: 1.5em;
+        text-align: center;
+        background-color: #09203F;
+        height: 90px;
+        color: #fff;
+        border-radius: 10px;
+        font-family: "Lusitana", sans-serif;
+    }
+    
     .stats {
         position: absolute;
         top: 10px;
         right: 40px;
-        background: radial-gradient(#eee, #8998b6);
+        left: 10px;
+        width: 220px;
+        height: 250px;
         border: 1px solid #000;
-        box-shadow: 0 0 30px #111;
         opacity: .8;
+        padding: .5rem;
+        background: radial-gradient(#eee, #8998b6);
+        box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.59);
     }
+    
+    .stats p {
+        line-height: 10%;
+    }
+    
     .forest {
         max-width: 250px;
         float: right;
         display: inline-flex;
         padding: 10px;
     }
+    
     .contact {
         height: 300px;
         padding: 5px;
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 30px;
-        margin-top: 20px;
+        padding-top: 10px;
+        margin-top: 10px;
         margin-bottom: 0px;
     }
+    
     .contact p,
     .contact h3 {
         position: relative;
         left: 30px;
     }
-    .social {
-        padding-top: 20px;
-        max-height: 40px;
-        position: relative;
-        left: 30px;
+    
+    .header {
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 3px solid white;
     }
-}
+    
+    header {
+        background-color: #09203F;
+        text-align: center;
+        color: white;
+        font-size: 1em;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header img {
+        width: 80px;
+        height: auto;
+    }
+    
+    .topbanner {
+        height: 120px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .logo {
+        float: left;
+        width: 90px;
+        height: 90px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .headings {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .headings h1 {
+        font-size: 1.6rem;
+        margin: 0 0 0 17px;
+    }
+    
+    .title {
+        display: grid;
+        text-align: center;
+    }
+    
+    .subtitle {
+        font-style: italic;
+        letter-spacing: 1pt;
+        color: lawngreen;
+        margin-left: 20px;
+        font-size: .9rem;
+    }
+    
+    .infoWide {
+        background: #ddd;
+        box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+        padding: 10px;
+    }
+    
+    .contentbox {
+        background-color: #eee;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Great+Vibes", serif;
+        padding: 5px;
+    }
+    
+    p {
+        font-family: "Cormorant+Garamond", sans-serif;
+        padding: 10px;
+    }
+    
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        padding: 0;
+    }
+    
+    li a {
+        display: block;
+        background-color: #485665;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 8px 16px;
+        text-decoration: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .active {
+        color: cornflowerblue;
+    }
+    
+    #currentdate {
+        color: #FFD600;
+    }
+    /* Navigation Menu */
+    
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    .navigation {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .navigation li {
+        display: none;
+    }
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    
+    .main-nav ul {
+        display: grid;
+        grid-gap: 20px;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .main-nav a {
+        background: var(--primary);
+        display: block;
+        text-decoration: none;
+        padding: 0.8rem;
+        text-align: center;
+        color: #09203F;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        box-shadow: var(--shadow);
+    }
+    
+    .main-nav a:hover {
+        background: lime;
+        color: red;
+    }
+    /* the onclick JS toggles the .repsonsive class from display none 
+    (.navigation li) to display block because the repsonsive class is added 
+    to the end of the class list like this in HTML Line #6.
+    <ul class="navigation responsive">
+    */
+    
+    .responsive li {
+        display: block;
+    }
+    
+    .advice {
+        background-color: #fff;
+        color: black;
+        font-size: .9em;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 30px #111;
+    }
+    
+    .herodiv {
+        margin: 10px auto;
+        position: relative;
+        display: flex;
+    }
+    
+    .herodiv img {
+        width: 100%;
+        display: flex;
+    }
+    
+    .map {
+        float: right;
+        margin-top: 0rem;
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+        display: flex;
+        padding: 5px;
+        box-shadow: 0 0 30px #333;
+    }
+    
+    table {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    th,
+    td {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .icon {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    
+    #hhead {
+        margin-left: 10px;
+    }
