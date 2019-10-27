@@ -21,7 +21,9 @@
             justify-content: center;
             border-bottom: 3px solid white;
         }
-        header img {
+        header figure.logo {
+            float: left;
+            margin: 0 2% 0 0;
             width: 80px;
             height: auto;
         }
