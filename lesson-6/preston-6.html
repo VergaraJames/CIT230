@@ -18,9 +18,6 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <script src="js/currentdate.js"></script>
     <script src="js/main.js"></script>
-    <!--
-    <link rel="stylesheet" href="css/main-51.css">
--->
 
 </head>
 
@@ -63,15 +60,21 @@
                 <h1> Preston Idaho </h1>
                 <section class="infoWide">
                     <div class="contentbox">
+                        <picture>
+                            <source srcset="images/hero-l.jpg" media="(min-width:1000px)">
+                            <source srcset="images/hero-m.jpg" media="(min-width:600px)">
+                            <source srcset="images/hero-s.jpg" media="(min-width:200px)">
+                            <img src="images/cit230_image_franklinOriginal.jpeg" alt="hero image">
+                        </picture>
                         <div class="herodiv">
                             <img src="images/preston.jpg">
                             <section class="stats">
                                 <h2>Weather Summary</h2>
-                                <p>Currently: Light rain</p>
-                                <p>High: 36 &#8457;</p>
-                                <p>Wind Chill: 0 </p>
-                                <p>Humidity: 70%</p>
-                                <p>Wind Speed: 7 mph</p>
+                                <p>Currently: <span>Light rain</span></p>
+                                <p>High: <span>36 &#8457;</span></p>
+                                <p><span>Wind Chill: <span id="wChill"> &#8457;</span></p>
+                                <p>Humidity: <span>70%</span></p>
+                                <p>Wind Speed: <span id="windS">7 mph</span></p>
                             </section>
                         </div>
                     </div>
