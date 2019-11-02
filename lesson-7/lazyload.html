@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development">
+    <title>Lazy Load Page - CIT 230 Fall 2019</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <script src="js/lazyload.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="topbanner">
+            <div class="advice" id="5" style="display:none">
+                <p>
+                    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+                </p>
+            </div>
+            <script>
+                showhide();
+            </script>
+            <figure class="logo">
+                <img src="images/logo.png">
+            </figure>
+            <section class="headings">
+                <h1 class="title">Weather Wind Vane</h1>
+                <p class="subtitle">Looking at the sky</p>
+            </section>
+        </header>
+        <nav>
+            <!--  <button onclick="toggleMenu()">&#9776; </button> -->
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="preston-5.html">Preston</a></li>
+                <li><a href="#">Soda Spring</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Info Section 1 -->
+            <section class="infoWide">
+                <div class="bodyLazy">
+                    <h1>Lazy Load Images</h1>
+                    <picture><img class="lazy" src="images/preview.jpg" data-src="images/picture1.jpg" /></picture>
+                    <picture><img class="lazy" src="images/preview.jpg" data-src="images/picture2.jpg" /></picture>
+                    <picture><img class="lazy" src="images/preview.jpg" data-src="images/picture3.jpg" /></picture>
+                    <picture><img class="lazy" src="images/preview.jpg" data-src="images/picture4.jpg" /></picture>
+                    <picture><img class="lazy" src="images/preview.jpg" data-src="images/picture5.jpg" /></picture>
+                    <picture><img class="lazy" src="images/preview.jpg" data-src="images/picture6.jpg" /></picture>
+                </div>
+            </section>
+
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>
+                Weather Wind Vane &copy; 2019 | James Vergara Rincon | BYU-Idaho - CIT 230
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

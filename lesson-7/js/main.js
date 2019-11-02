@@ -1,8 +1,7 @@
 function toggleMenu() {
-    document
-        .getElementsByClassName("navigation")[0]
-        .classList.toggle("responsive");
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
+
 
 function showhide() {
     var d = new Date();
