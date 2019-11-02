@@ -152,8 +152,7 @@ nav {
 }
 
 .bold_Text {
-    font-style: italic;
-    font: bold;
+    font-style: italic bold;
     color: #3E689D;
     font-size: 1.1rem;
 }
