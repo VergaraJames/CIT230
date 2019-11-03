@@ -56,10 +56,16 @@ body {
 
 /* grid, wrapper */
 
+.infoWide {
+    background: #ddd;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 10px;
+}
+
 .grid-container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     margin: 10px;
 }
@@ -68,6 +74,21 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     overflow: hidden;
+}
+
+.bodyLazy {
+    display: block;
+    text-align: center;
+    font-family: "Karla", serif;
+    margin: 1rem auto;
+}
+
+.bodyLazy img {
+    display: block;
+    width: 300px;
+    height: 400px;
+    border: 0;
+    padding: 10px;
 }
 
 .wrapper {
@@ -79,12 +100,6 @@ body {
     padding: 10px;
     margin: 0 auto;
     text-align: center;
-}
-
-.infoWide {
-    background: #ddd;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-    padding: 10px;
 }
 
 .contentbox {
@@ -243,12 +258,6 @@ footer {
 
 /* Revisar */
 
-nav {
-    margin: 0 auto;
-    max-width: 760px;
-    background-color: #485665;
-}
-
 nav li {
     display: block;
     white-space: nowrap;
@@ -259,8 +268,8 @@ nav li {
     text-align: center;
     padding: 0;
     /* aca es diferente
-
- display: flex;
+    
+    display: flex;
     list-style: none;
     text-align: center;
     padding: 0;
@@ -279,7 +288,6 @@ nav li {
     display: none;
     display: block;
     flex: 1 1 100%;
-    */
 }
 
 .navigation a {
