@@ -1,0 +1,62 @@
+    /* Middle viewports */
+    
+    @media only screen and (min-width:32.5em) and (max-width: 64em) {
+        .navigation {
+            display: flex;
+        }
+        .navigation li:first-child {
+            display: none;
+        }
+        .navigation li {
+            display: block;
+            flex: 1 1 100%;
+        }
+        .navigation li a {
+            color: rgb(255, 255, 255);
+            display: block;
+        }
+        footer {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        main {
+            max-width: 900px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .stats {
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            background: radial-gradient(#eee, #8998b6);
+            border: 1px solid #000;
+            box-shadow: 0 0 30px #111;
+            opacity: .8;
+        }
+        .forest {
+            max-width: 250px;
+            float: right;
+            display: inline-flex;
+            padding: 10px;
+        }
+        .contact {
+            height: 270px;
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 30px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        .contact p,
+        .contact h3 {
+            position: relative;
+            left: 30px;
+        }
+        .social {
+            padding-top: 20px;
+            max-height: 40px;
+            position: relative;
+            left: 30px;
+        }
+    }

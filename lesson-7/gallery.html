@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery - CIT 230 Fall 2019</title>
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"></script>
+    <!--Get your own code at fontawesome.com  
+        https://www.w3schools.com/icons/icons_reference.asp -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/normalizeNAT.css">
+
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <script src="js/currentdate.js"></script>
+    <script src="js/lazyloadNAT.js"></script>
+    <script src="js/toggle.js"></script>
+    <!--
+    <script src="js/main.js"></script>
+        
+    <link rel="stylesheet" href="css/styles.css">
+-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="topbanner">
+            <div class="advice" id="5" style="display:none">
+                <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+            </div>
+            <script>
+                showhide();
+            </script>
+            <picture>
+                <img class="logo" src="images/logo.png">
+            </picture>
+            <section class="headings">
+                <h1 class="title"> Weather Wind Vane</h1>
+                <p class="subtitle">Looking at the sky</p>
+            </section>
+
+        </header>
+        <nav class="main-nav">
+            <!--  <button onclick="toggleMenu()">&#9776; </button> -->
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="preston-5.html">Preston</a></li>
+                <li><a href="#">Soda Spring</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="wrapper">
+                <!-- Info Section 1 -->
+                <h1> Weather Gallery </h1>
+                <section class="infoWide">
+                    <div class="grid-item">
+                        <picture>
+                            <img src="images/galleryplaceholder.jpg" data-src="images/fallday.jpg" alt="A crisp fall day">
+                        </picture>
+                        <figcaption>A crisp fall day</figcaption>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <img src="images/galleryplaceholder.jpg" data-src="images/overcast.jpg" alt="Overcast sky over a field">
+                        </picture>
+                        <figcaption>An overcast Idaho day</figcaption>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <img src="images/galleryplaceholder.jpg" data-src="images/rainyday.jpg" alt="Storm clouds approaching the mountains">
+                        </picture>
+                        <figcaption>Storm clouds approaching</figcaption>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <img src="images/galleryplaceholder.jpg" data-src="images/snow.jpg" alt="Snow on an Idaho road">
+                        </picture>
+                        <figcaption>A snowy Idaho road</figcaption>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <img src="images/galleryplaceholder.jpg" data-src="images/snowstorm.jpg" alt="Snow storm on the mountain">
+                        </picture>
+                        <figcaption>A snow storm seen from the mountain</figcaption>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <img src="images/galleryplaceholder.jpg" data-src="images/storm.jpg" alt="A rainstorm">
+                        </picture>
+                        <figcaption>A rainstorm over an Idaho field</figcaption>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <img src="images/galleryplaceholder.jpg" data-src="images/sunny.jpg" alt="A sunny summer day">
+                        </picture>
+                        <figcaption>A sunny summer day</figcaption>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <img src="images/galleryplaceholder.jpg" data-src="images/thunder.jpg" alt="Thunder in the night">
+                        </picture>
+                        <figcaption>Thunder during the night.</figcaption>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <img src="images/galleryplaceholder.jpg" data-src="images/warmcloudy.jpg" alt="A warm, cloudy sunset">
+                        </picture>
+                        <figcaption>A warm, cloudy sunset</figcaption>
+                    </div>
+                </section>
+
+
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p class="footer"> Weather Wind Vane | &copy; <span id="copyYear">2019</span> |
+                <p class="mod">Current day <span id="currentdate"></span></p>
+                <p>James Vergara Rincón</p>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
