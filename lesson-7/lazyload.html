@@ -2,19 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development" />
     <title>Lazy Load Page - CIT 230 Fall 2019</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png">
-    <!-- JavaScript Files -->
-    <script src="js/main.js"></script>
-    <script src="js/lazyloadJVR.js"></script>
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+
     <!-- CSS Files -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
 </head>
 
 <body>
@@ -31,7 +30,7 @@
             </script>
             <!-- Logo -->
             <figure class="logo">
-                <img src="images/logo.png">
+                <img src="images/logo.png" />
             </figure>
             <!-- Title -->
             <section class="headings">
@@ -44,14 +43,13 @@
             <ul class="navigation responsive">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li class="active"><a href="preston-5.html">Preston</a></li>
+                <li class="active"><a href="../lesson-5/preston-5.html">Preston</a></li>
                 <li><a href="#">Soda Spring</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="../lesson-7/gallery.html">Gallery</a></li>
             </ul>
         </nav>
-
         <main>
             <!-- Info Section 1 -->
             <section class="infoWide">
@@ -66,14 +64,16 @@
                     <picture><img class="lazy" src="images/preview.jpg" data-src="images/picture6.jpg" /></picture>
                 </div>
             </section>
-
         </main>
         <!-- Footer -->
         <footer>
-            <p>
-                Weather Wind Vane &copy; 2019 | James Vergara Rincon | BYU-Idaho - CIT 230
-            </p>
+            <p>Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span></p>
+            <p> James Vergara Rincon </p>
         </footer>
+        <!-- JavaScript Files -->
+        <script src="js/main.js"></script>
+        <script src="js/lazyloadJVR.js"></script>
+        <script src="../js/currentdate.js"></script>
     </div>
 </body>
 

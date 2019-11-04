@@ -11,21 +11,12 @@
     <!--Get your own code at fontawesome.com  
         https://www.w3schools.com/icons/icons_reference.asp -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="css/normalizeNAT.css">
 
-    <link rel="shortcut icon" href="images/favicon.png">
-    <script src="js/lazyloadJVR.js"></script>
-    <script src="js/main.js"></script>
-
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!--
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/middle.css">
-    <link rel="stylesheet" href="css/small.css">
-
-
--->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
 </head>
 
 <body>
@@ -33,30 +24,33 @@
         <!-- Header -->
         <header class="topbanner">
             <div class="advice" id="5" style="display:none">
-                <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+                <p>
+                    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+                </p>
             </div>
             <script>
                 showhide();
             </script>
-            <picture>
-                <img class="logo" src="images/logo.png">
-            </picture>
+            <!-- Logo -->
+            <figure class="logo">
+                <img src="images/logo.png" />
+            </figure>
+            <!-- Title -->
             <section class="headings">
-                <h1 class="title"> Weather Wind Vane</h1>
+                <h1 class="title">Weather Wind Vane</h1>
                 <p class="subtitle">Looking at the sky</p>
             </section>
-
         </header>
-        <nav class="main-nav">
-            <!--  <button onclick="toggleMenu()">&#9776; </button> -->
+        <nav>
+            <!-- nav Menu -->
             <ul class="navigation responsive">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li class="active"><a href="preston-5.html">Preston</a></li>
+                <li class="active"><a href="../lesson-5/preston-5.html">Preston</a></li>
                 <li><a href="#">Soda Spring</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="../lesson-7/gallery.html">Gallery</a></li>
             </ul>
         </nav>
 
@@ -128,11 +122,13 @@
         </main>
         <!-- Footer -->
         <footer>
-            <p class="footer"> Weather Wind Vane | &copy; <span id="copyYear">2019</span> |
-                <p class="mod">Current day <span id="currentdate"></span></p>
-                <p>James Vergara Rincón</p>
-            </p>
+            <p>Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span></p>
+            <p> James Vergara Rincon </p>
         </footer>
+        <!-- JavaScript Files -->
+        <script src="js/main.js"></script>
+        <script src="js/lazyloadJVR.js"></script>
+        <script src="../js/currentdate.js"></script>
     </div>
 </body>
 
