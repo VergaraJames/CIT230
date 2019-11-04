@@ -254,39 +254,26 @@ footer {
 
 /* Navigation Menu */
 
-
-/* Revisar */
-
-nav li {
-    display: block;
-    white-space: nowrap;
+nav {
+    margin: 0 auto;
+    /* Short nav
+    max-width: 760px;
+    */
+    background-color: #000;
 }
 
 .navigation {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    /* aca es diferente
-    
-    display: flex;
     list-style: none;
     text-align: center;
     padding: 0;
-        
-    */
 }
 
 .navigation li:first-child {
-    /* aca es diferente
     display: block;
-    */
-    display: none;
 }
 
 .navigation li {
     display: none;
-    display: block;
-    flex: 1 1 100%;
 }
 
 .navigation a {
@@ -297,9 +284,6 @@ nav li {
     color: #09203f;
     text-transform: uppercase;
     box-shadow: var(--shadow);
-    /* 
-    background: var(--primary);
-*/
 }
 
 .navigation a:hover {
@@ -456,10 +440,20 @@ tr {
 }
 
 
-/* Small viewports  0 - 32.5em */
+/* Small viewports  0 - 32em */
 
-@media only screen and (min-width:0) and (max-width: 32.5em) {
+@media only screen and (min-width:32em) {
     #hide {
         display: none;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        line-height: 1em;
+    }
+    body {
+        font-size: 10px;
+        font-family: "Oswald", sans-serif;
     }
 }

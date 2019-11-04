@@ -7,16 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development">
     <title>Lazy Load Page - CIT 230 Fall 2019</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- JavaScript Files -->
     <script src="js/main.js"></script>
-    <script src="js/lazyload.js"></script>
-    <!-- Header 
-            
-                <link rel="stylesheet" href="css/normalize.css">
-
-            -->
-
+    <script src="js/lazyloadJVR.js"></script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -31,16 +29,18 @@
             <script>
                 showhide();
             </script>
+            <!-- Logo -->
             <figure class="logo">
                 <img src="images/logo.png">
             </figure>
+            <!-- Title -->
             <section class="headings">
                 <h1 class="title">Weather Wind Vane</h1>
                 <p class="subtitle">Looking at the sky</p>
             </section>
         </header>
         <nav>
-            <!--  <button onclick="toggleMenu()">&#9776; </button> -->
+            <!-- nav Menu -->
             <ul class="navigation responsive">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
@@ -55,7 +55,8 @@
         <main>
             <!-- Info Section 1 -->
             <section class="infoWide">
-                <div class="bodyLazyTwo">
+                <div class="bodyLazy300">
+                    <!-- Lazy Load Images -->
                     <h1>Lazy Load Images</h1>
                     <picture><img class="lazy" src="images/preview.jpg" data-src="images/picture1.jpg" /></picture>
                     <picture><img class="lazy" src="images/preview.jpg" data-src="images/picture2.jpg" /></picture>
