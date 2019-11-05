@@ -11,19 +11,23 @@
     <!--Get your own code at fontawesome.com  
         https://www.w3schools.com/icons/icons_reference.asp -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/middle.css">
     <link rel="stylesheet" href="css/small.css">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <script src="js/currentdate.js"></script>
-    <script src="js/main.js"></script>
+-->
 </head>
 
 <body>
     <div class="wrapper">
         <!-- Header -->
-        <header class="topbanner">
+        <header class="topbanner clearfix">
             <div class="advice" id="5" style="display:none">
                 <p>
                     Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
@@ -32,28 +36,36 @@
             <script>
                 showhide();
             </script>
+            <!-- Logo -->
             <figure class="logo">
-                <img src="images/logo.png" />
+                <img src="images/logo.png" alt="logo" srcset="
+              images/logo1.png 1x,
+              images/logo2.png 2x,
+              images/logo3.png 3x
+            " />
             </figure>
+            <!-- Title -->
             <section class="headings">
                 <h1 class="title">Weather Wind Vane</h1>
                 <p class="subtitle">Looking at the sky</p>
             </section>
         </header>
-        <nav>
-            <!--  <button onclick="toggleMenu()">&#9776; </button> -->
+        <nav class="clearfix">
+            <!-- nav Menu -->
             <ul class="navigation responsive">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li class="active"><a href="preston-5.html">Preston</a></li>
+                <li class="active">
+                    <a href="../lesson-5/preston-5.html">Preston</a>
+                </li>
                 <li><a href="#">Soda Spring</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="../lesson-7/gallery.html">Gallery</a></li>
             </ul>
         </nav>
 
-        <main>
+        <main class="clearfix">
             <div class="wrapper">
                 <!-- Info Section 1 -->
                 <h1>Preston Idaho</h1>
@@ -61,25 +73,26 @@
                     <div class="contentbox">
                         <div class="herodiv">
                             <figure class="photos">
-                                <source srcset="images/image_1024.jpg" media="(min-width:1000px)">
-                                <source srcset="images/image_600.jpg" media="(min-width:600px)">
-                                <source srcset="images/image_200.jpg" media="(min-width:200px)">
-                                <img src="images/Image_Original.jpg" alt="hero image">
+                                <img scr="images/image_Original.jpg" sizes="50vw" srcset="
+                      images/image_200.jpg   200w,
+                      images/image_600.jpg   600w,
+                      images/Image_1024.jpg 1024w
+                    " />
                             </figure>
                             <section class="stats">
                                 <h2>Weather Summary</h2>
                                 <p>Currently: <span>Light rain</span></p>
                                 <p>High: <span>36 &#8457;</span></p>
-                                <p>Wind Chill: <span id="wChill"> &#8457;</span></p>
+                                <p>Wind Chill: <span id="windChill"> &#8457;</span></p>
                                 <p>Humidity: <span>70%</span></p>
-                                <p>Wind Speed: <span id="windS">7 mph</span></p>
+                                <p>Wind Speed: <span id="windSpeed"> mph</span></p>
                             </section>
                         </div>
                     </div>
                 </section>
                 <!-- Info Section 2 -->
                 <section class="infoWide">
-                    <div class="contentbox forecast">
+                    <div class="contentbox">
                         <h1>Forecast</h1>
                         <table>
                             <tr>
@@ -91,19 +104,19 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img class="icon" src="images/sun.jpg"><br> 40&#8457;
+                                    <img class="icon" src="images/sun.jpg" /><br /> 40&#8457;
                                 </td>
                                 <td>
-                                    <img class="icon" src="images/rain.png"><br> 38&#8457;
+                                    <img class="icon" src="images/rain.png" /><br /> 38&#8457;
                                 </td>
                                 <td>
-                                    <img class="icon" src="images/rain2.jpg"><br> 36&#8457;
+                                    <img class="icon" src="images/rain2.jpg" /><br /> 36&#8457;
                                 </td>
                                 <td>
-                                    <img class="icon" src="images/sun.jpg"><br> 38&#8457;
+                                    <img class="icon" src="images/sun.jpg" /><br /> 38&#8457;
                                 </td>
                                 <td>
-                                    <img class="icon" src="images/rain2.jpg"><br> 36&#8457;
+                                    <img class="icon" src="images/rain2.jpg" /><br /> 36&#8457;
                                 </td>
                             </tr>
                         </table>
@@ -125,7 +138,7 @@
                 <!-- Info Section 4 -->
                 <section class="infoWide">
                     <div class="contact">
-                        <img id="hide" class="map" src="images/Preston_map.png">
+                        <img id="hide" class="map" src="images/Preston_map.png" />
                         <h3>Weather Wind Vane - Contact information</h3>
                         <div>
                             <table>
@@ -139,19 +152,19 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="https://www.twitter.com" target="_blank"><img class="icon" src="images/twitter2.png" alt="Twitter"></a>
+                                        <a href="https://www.twitter.com" target="_blank"><img class="icon" src="images/twitter2.png" alt="Twitter" /></a>
                                     </td>
                                     <td>
-                                        <a href="https://www.facebook.com" target="_blank"><img class="icon" src="images/facebook2.png" alt="facebook"></a>
+                                        <a href="https://www.facebook.com" target="_blank"><img class="icon" src="images/facebook2.png" alt="facebook" /></a>
                                     </td>
                                     <td>
-                                        <a href="https://www.pinterest.com" target="_blank"><img class="icon" src="images/pinterest.png" alt="pinterest"></a>
+                                        <a href="https://www.pinterest.com" target="_blank"><img class="icon" src="images/pinterest.png" alt="pinterest" /></a>
                                     </td>
                                     <td>
-                                        <a href="https://www.youtube.com" target="_blank"><img class="icon" src="images/youtube.png" alt="youtube"></a>
+                                        <a href="https://www.youtube.com" target="_blank"><img class="icon" src="images/youtube.png" alt="youtube" /></a>
                                     </td>
                                     <td>
-                                        <a href="https://https://www.linkedin.com" target="_blank"><img class="icon" src="images/linkedn2.png" alt="linkedn"></a>
+                                        <a href="https://https://www.linkedin.com" target="_blank"><img class="icon" src="images/linkedn2.png" alt="linkedn" /></a>
                                     </td>
                                 </tr>
                             </table>
@@ -163,9 +176,14 @@
         <!-- Footer -->
         <footer>
             <p>
-                Weather Wind Vane &copy; 2019 | James Vergara Rincon | BYU-Idaho - CIT 230 | Current Date: <span id="currentdate"></span>
+                Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span>
             </p>
+            <p>James Vergara Rincon</p>
         </footer>
+        <!-- JavaScript Files -->
+        <script src="js/main.js"></script>
+        <script src="../js/currentdate.js"></script>
+        <script src="js/windspeed.js"></script>
     </div>
 </body>
 
