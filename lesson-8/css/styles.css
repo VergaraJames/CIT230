@@ -24,12 +24,11 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 main {
     display: block;
-    max-width: 1024px;
 }
 
 .wrapper {
@@ -39,17 +38,17 @@ main {
 .wrapper h1 {
     padding: 10px;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 760px;
     text-align: center;
 }
 
 .infoWide {
     background: #ddd;
     box-shadow: var(--shadow);
-    /* display: flex;
+    display: flex;
     padding: 10px;
-    */
-    max-width: 1024px;
+    margin: 0 auto;
+    max-width: 760px;
 }
 
 .contentbox {
@@ -78,7 +77,7 @@ header {
     color: black;
     font-size: 0.9em;
     padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-top: 0px;
     margin-bottom: 10px;
     box-shadow: 0 0 30px #111;
@@ -171,8 +170,6 @@ nav {
     font-size: 1.1rem;
 }
 
-
-/*
 .logo {
     float: left;
     width: 90px;
@@ -180,7 +177,6 @@ nav {
     padding-right: 10px;
     padding-left: 10px;
 }
-*/
 
 header img {
     width: 80px;
@@ -190,7 +186,7 @@ header img {
 .bodyLazy300 {
     display: block;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Roboto", serif;
     margin: 1rem auto;
 }
 
@@ -240,7 +236,7 @@ img {
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1024px;
+    max-width: 1048px;
 }
 
 img {
@@ -249,7 +245,7 @@ img {
 }
 
 figcaption {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: smaller;
     text-align: center;
 }
@@ -276,7 +272,7 @@ figcaption {
 /* simple opacity */
 
 .opac {
-    opacity: 0.5;
+    opacity: .5;
 }
 
 .blur {
@@ -292,7 +288,7 @@ figcaption {
 .shape-outside {
     border-radius: 100px;
     width: 35%;
-    margin: 0 3em 0.5em 0;
+    margin: 0 3em .5em 0;
     float: left;
     shape-outside: circle();
 }
@@ -305,144 +301,6 @@ figcaption {
 .headings h1 {
     font-size: 1.6rem;
     margin: 0 0 0 17px;
-}
-
-.herodiv {
-    margin: 10px auto;
-    position: relative;
-    /* display: flex; */
-}
-
-.herodiv img {
-    width: 100%;
-    display: flex;
-}
-
-.table {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid grey;
-    border-collapse: collapse;
-    box-shadow: 10px 10px 10px rgb(98, 140, 166);
-}
-
-.th,
-.td {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-    border: 1px solid black;
-    padding: 10px;
-    font-family: "Ubuntu", sans-serif;
-}
-
-thead,
-tfoot {
-    background-color: #7fb9c2;
-    font-family: sans-serif;
-}
-
-thead {
-    font-size: 1.25rem;
-}
-
-tfoot {
-    font-size: .75rem;
-    text-align: center;
-}
-
-#highlight {
-    background-color: #628ca6;
-    color: white;
-}
-
-tbody th {
-    background-color: #628ca6;
-    color: white;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #e7f0ed;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #e7ffed;
-}
-
-.icon {
-    max-width: 40px;
-    max-height: 40px;
-}
-
-#hhead {
-    margin-left: 10px;
-}
-
-.stats {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    left: 60px;
-    width: 220px;
-    height: 200px;
-    border: 1px solid #000;
-    opacity: 0.8;
-    padding: 0.5rem;
-    background: radial-gradient(#eee, #8998b6);
-    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.59);
-}
-
-.stats p {
-    line-height: 10%;
-}
-
-.forest {
-    max-width: 250px;
-    float: right;
-    display: inline-flex;
-    padding: 10px;
-}
-
-.forest p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5px 5px 5px 5px;
-}
-
-.contact {
-    height: 300px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-.contact p,
-.contact h3 {
-    position: relative;
-    left: 30px;
-}
-
-.map {
-    float: right;
-    margin-top: 0rem;
-    border-radius: 10px;
-    width: 300px;
-    height: 200px;
-    display: flex;
-    padding: 5px;
-    box-shadow: 0 0 30px #333;
-}
-
-#hide {
-    display: flex;
-    /*    display: none; */
 }
 
 
@@ -460,12 +318,18 @@ tbody tr:nth-child(even) {
         font-size: larger;
         margin-left: 17px;
     }
+    .contentbox {
+        background-color: #ccc;
+    }
 }
 
 
 /* Middle viewports */
 
 @media only screen and (min-width: 48em) {
+    .contentbox {
+        background-color: #bed;
+    }
     header img {
         width: 100%;
     }
@@ -497,6 +361,13 @@ tbody tr:nth-child(even) {
 /* Small viewports */
 
 @media only screen and (min-width: 32em) {
+    * {
+        /*
+        box-sizing: border-box;
+        */
+        padding: 0px;
+        line-height: 0.8em;
+    }
     /* new 3 pictures */
     .grid-container {
         display: grid;
@@ -514,26 +385,5 @@ tbody tr:nth-child(even) {
         letter-spacing: 0.5pt;
         font-size: small;
         margin-left: 10px;
-    }
-    /* Insert new - size of logo */
-    header {
-        padding: 0.5rem 2%;
-    }
-    header h1 {
-        margin: 0;
-    }
-    header h2 {
-        margin: 0;
-        font-weight: normal;
-    }
-    header figure.logo {
-        float: left;
-        margin: 0 2% 0 0;
-    }
-    /* clearfix: Force an element no to collapse */
-    .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
     }
 }

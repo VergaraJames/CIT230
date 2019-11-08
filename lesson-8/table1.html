@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development" />
+    <title>Table Build - CIT 230 Fall 2019</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="topbanner">
+            <div class="advice" id="5" style="display:none">
+                <p>
+                    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+                </p>
+            </div>
+            <script>
+                showhide();
+            </script>
+            <!-- Logo -->
+            <figure class="logo">
+                <img src="images/logo.png" />
+            </figure>
+            <!-- Title -->
+            <section class="headings">
+                <h1 class="title">Weather Wind Vane</h1>
+                <p class="subtitle">Looking at the sky</p>
+            </section>
+        </header>
+        <nav>
+            <!-- nav Menu -->
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="../lesson-5/preston-5.html">Preston</a></li>
+                <li><a href="#">Soda Spring</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="../lesson-7/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Info Section 1 -->
+
+            <section class="infoWide">
+
+                <!-- table -->
+                <table style="width:50%">
+                    <thead>
+                        <caption>ACME Wildwest</caption>
+                    </thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Sales</th>
+                        <th>Sales Goal</th>
+                    </tr>
+                    <tr>
+                        <td>August</td>
+                        <td>$3,590</td>
+                        <td>$4,000</td>
+                    </tr>
+                    <tr>
+                        <td>September</td>
+                        <td>$4,220</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>October</td>
+                        <td>$4,870</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>November</td>
+                        <td>$8,610</td>
+                        <td class="highlight">$7,500</td>
+                    </tr>
+                    <tr>
+                        <td>Black Friday</td>
+                        <td>$3,200</td>
+                    </tr>
+                    <tr>
+                        <td>December</td>
+                        <td>$6,820</td>
+                        <td>$7,500</td>
+                    </tr>
+                    <tr>
+                        <tfoot>
+                            compiled by James Vergara, November 8, 2019
+                        </tfoot>
+                    </tr>
+                </table>
+
+
+            </section>
+
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span></p>
+            <p> James Vergara Rincon </p>
+        </footer>
+        <!-- JavaScript Files -->
+        <script src="js/main.js"></script>
+        <script src="js/lazyloadJVR.js"></script>
+        <script src="../js/currentdate.js"></script>
+    </div>
+</body>
+
+</html>
