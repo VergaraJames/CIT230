@@ -318,6 +318,9 @@ figcaption {
     display: flex;
 }
 
+
+/*
+
 .table {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -372,6 +375,55 @@ tbody tr:nth-child(odd) {
 
 tbody tr:nth-child(even) {
     background-color: #e7ffed;
+}
+*/
+
+
+/* tables */
+
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px rgb(98, 140, 166);
+}
+
+thead,
+tfoot {
+    background-color: #7fb9c2;
+}
+
+thead {
+    font-size: 1.25rem;
+}
+
+tfoot {
+    font-size: .75rem;
+    text-align: center;
+}
+
+td,
+th {
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#highlight {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody th {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
 }
 
 .icon {
