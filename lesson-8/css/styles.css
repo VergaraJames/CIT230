@@ -355,7 +355,9 @@ form {
 }
 
 legend {
-    font-size: 1.5em;
+    font-size: 3em;
+    text-align: left;
+    font-family: "Great+Vibes", sans-serif;
 }
 
 fieldset {
@@ -402,7 +404,8 @@ label {
     @media (min-width: 1200px) {
         form>div>label,
         legend {
-            text-align: right;
+            text-align: left;
+            font-size: larger;
         }
     }
 }
