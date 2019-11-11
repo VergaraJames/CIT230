@@ -1,0 +1,52 @@
+/* 35em is also 560px (if basefont is 16px) */
+
+@media only screen and (min-width: 35rem) {
+    /*----------- BODY --------------*/
+    /*----------- HEADER --------------*/
+    /*----------- NAVIGATION --------------*/
+    nav ul {
+        margin-left: 2%;
+    }
+    nav ul li {
+        width: auto;
+    }
+    nav ul li:first-child a {
+        border-left: 1px solid #777;
+    }
+    nav ul li:last-child a {
+        border-right: 1px solid #777;
+    }
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+    /*----------- MAIN --------------*/
+    /*----------- FOOTER --------------*/
+    /*----------- FORM --------------*/
+    @media (max-width: 600px) {
+        form>div {
+            margin: 0 0 15px 0;
+        }
+        form>div>label,
+        legend {
+            width: 100%;
+            float: none;
+            margin: 0 0 5px 0;
+        }
+        form>div>div,
+        form>div>fieldset>div {
+            width: 100%;
+            float: none;
+        }
+        input[type=text],
+        input[type=email],
+        input[type=url],
+        input[type=password],
+        textarea,
+        select {
+            width: 100%;
+        }
+    }
+}
+
+
+/* end of media query */

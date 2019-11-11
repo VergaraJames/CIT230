@@ -55,88 +55,77 @@
                 <li><a href="../lesson-7/gallery.html">Gallery</a></li>
             </ul>
         </nav>
-
+        <!-- main -->
         <main>
             <h1>Storm Center</h1>
-            <form id="myform">
-                <h3>Tell us your experiences</h3>
+            <form>
                 <fieldset>
-                    <legend>Who are you?</legend>
-                    <label>Full Name
-                  <input
-                    type="text"
-                    name="fullName"
-                    pattern="A-Za-z0-9[5]"
-                    required=""
-                /></label>
-                    <label>Email
-                  <input type="text" name="email" placeholder="your@email.com"
-                /></label>
-                    <label>Phone <input type="tel" name="phoneNumber" required=""
-                /></label>
-                    <label>Zip Code <input type="number" name="zipCode" required=""
-                /></label>
+                    <legend>Personal information:</legend>
+                    <label for="name">Full Name: <br>
+                      <input class="width" type="text" id="name" name="name"
+                          minlength="5" pattern="A-Za-z0-9" required>
+                  </label>
+                    <label for="email">Email: <br>
+                      <input class="width" type="email" placeholder="youremail@email.com" id="email"
+                          size="30" required>
+                  </label>
+
+                    <label for="phone">Phone Number: <br>
+                      <input class="width" type="tel" id="phone" name="phone"
+                          required>
+                  </label>
+
+                    <label for="zipcode">Zip Code: <br>
+                      <input class="width" type="number" id="zip" name="zip"
+                          required>
+                  </label>
                 </fieldset>
                 <fieldset>
-                    <legend>What do you see?</legend>
-                    <label>Storm Date <input type="date" name="stormDate"/></label>
-                    <label>Storm Type <input list="stormTypes" name="stormType"
-                /></label>
-                    <datalist>
-                  <option value="Flash Flood"></option>
-                  <option value="Hail"></option>
-                  <option value="Hurricane"></option>
-                  <option value="Thunderstorm"></option>
-                  <option value="Tornado"></option>
-                </datalist>
-                    <label>Storm Severity
-                  <input type="range" name="severity" min="0" max="10" value="0"
-                /></label>
-                    <label>Storm Region
-                  <select>
-                    <option value="" disabled="" selected=""
-                      >▾ Select Region...</option
-                    >
-                    <option value="Preston">Preston</option>
-                    <option value="Sugar City">Sugar City</option>
-                    <option value="Fish Haven">Fish Haven</option>
-                  </select>
-                </label>
+                    <legend>Storm Information:</legend>
+                    <label for="date">Date of Storm: <br>
+                      <input class="width" type="date" id="date" name="stormdate">
+                  </label>
+
+                    <label for="type">Type of Storm: <br>
+                      <input class="width" list="type" name="stormtype">
+                      <datalist id="type">
+                          <option value="Flash Flood">  </option>
+                          <option value="Hail">  </option>
+                          <option value="Hurricane">  </option>
+                          <option value="Thunderstorm">  </option>
+                          <option value="Tornato">  </option>
+
+                      </datalist>
+                  </label>
+
+                    <label class="severity" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp; <br>
+                      <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                          <span id="ratingvalue">5</span>
+                  </label>
+
+
+                    <label for="region">Storm Region: <br>
+                      <select class="width">
+                          <option value="" disabled selected> Select Region...</option>
+                          <option value="preston">Preston</option>
+                          <option value="sodasprings">Soda Springs</option>
+                          <option value="fishhaven">Fish Haven</option>
+                      </select>
+                  </label>
+
+                    <label for="dangerlevel">Are You In Danger?: <br>
+                      <input type="radio" name="dangerlevel" value="yes"> Yes<br>
+                      <input type="radio" name="dangerlevel" value="no"> No<br>
+                      <input type="radio" name="dangerlevel" value="maybe"> Maybe<br> 
+                  </label>
+
+                    <label for="comments">Additional Information: <br>
+                      <textarea id="width"  rows="4" cols="40"> Briefly describe the storm information that you are observing at the scene...</textarea>
+                  </label>
                 </fieldset>
-                <fieldset>
-                    <legend>Are you in danger?</legend>
-                    <label><input
-                    class="danger"
-                    type="radio"
-                    name="dangerLevel"
-                    value="yes"
-                  />Yes</label
-                >
-                <label
-                  ><input
-                    class="danger"
-                    type="radio"
-                    name="dangerLevel"
-                    value="no"
-                  />No</label
-                >
-                <label
-                  ><input
-                    class="danger"
-                    type="radio"
-                    name="dangerLevel"
-                    value="maybe"
-                  />Maybe</label
-                >
-              </fieldset>
-              <fieldset>
-                <legend>Any Additional Comments?</legend>
-                <label
-                  ><input class="width" type="text" name="additionalcomments"
-                /></label>
-                </fieldset>
-                <input onclick="submitform()" class="submitBtn" type="button" value="Report My Experience" />
+                <input type="submit" class="submitbutton" onclick="thanks()" value="Report Storm">
             </form>
+
         </main>
         <!-- Footer -->
         <footer>

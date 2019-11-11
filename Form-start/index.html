@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Start Site by Paul Cheney</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h1>Course Proposal Application</h1>
+        <h1>Storm Center</h1>
+        <form action="#">
+
+            <header>
+                <h2>Example Responsive Form</h2>
+                <div>This form breaks at 600px and goes from a left-label form to a top-label form. At above 1200px, the labels align right.</div>
+            </header>
+
+            <div>
+                <label class="desc" id="title1" for="Field1">Full Name</label>
+                <div>
+                    <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+                </div>
+            </div>
+
+            <div>
+                <label class="desc" id="title3" for="Field3">
+                Email
+              </label>
+                <div>
+                    <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
+                </div>
+            </div>
+
+            <div>
+                <label class="desc" id="title4" for="Field4">
+                Message
+              </label>
+
+                <div>
+                    <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <fieldset>
+
+                    <legend id="title5" class="desc">
+                        Select a Choice
+                    </legend>
+
+                    <div>
+                        <input id="radioDefault_5" name="Field5" type="hidden" value="">
+                        <div>
+                            <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                            <label class="choice" for="Field5_0">First Choice</label>
+                        </div>
+                        <div>
+                            <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+                            <label class="choice" for="Field5_1">Second Choice</label>
+                        </div>
+                        <div>
+                            <input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+                            <label class="choice" for="Field5_2">Third Choice</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend id="title6" class="desc">
+                        Check All That Apply
+                    </legend>
+                    <div>
+                        <div>
+                            <input id="Field6" name="Field6" type="checkbox" value="First Choice" tabindex="8">
+                            <label class="choice" for="Field6">First Choice</label>
+                        </div>
+                        <div>
+                            <input id="Field7" name="Field7" type="checkbox" value="Second Choice" tabindex="9">
+                            <label class="choice" for="Field7">Second Choice</label>
+                        </div>
+                        <div>
+                            <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+                            <label class="choice" for="Field8">Third Choice</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <label class="desc" id="title106" for="Field106">
+                  Select a Choice
+              </label>
+                <div>
+                    <select id="Field106" name="Field106" class="field select medium" tabindex="11"> 
+                <option value="First Choice">First Choice</option>
+                <option value="Second Choice">Second Choice</option>
+                <option value="Third Choice">Third Choice</option>
+              </select>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <input id="saveForm" name="saveForm" type="submit" value="Submit">
+                </div>
+            </div>
+
+        </form>
+
+
+
+        <form>
+            <fieldset>
+                <legend>Your Information:</legend>
+                <label class="top">Full Name: <br>
+                    <input class="width" type="text" id="name" name="name"
+                        minlength="5" pattern="A-Za-z0-9" required>
+                </label>
+                <label class="email">Email: <br>
+                    <input class="width" type="email" placeholder="youremail@email.com" id="email"
+                        size="30" required>
+                </label>
+
+                <label class="phone">Phone Number: <br>
+                    <input class="width" type="tel" id="phone" name="phone"
+                        required>
+                </label>
+
+                <label class="zipcode">Zip Code: <br>
+                    <input class="width" type="number" id="zip" name="zip"
+                        required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information:</legend>
+                <label class="date">Date of Storm: <br>
+                    <input class="width" type="date" id="date" name="stormdate">
+                </label>
+
+                <label class="type">Type of Storm: <br>
+                    <input class="width" list="type" name="stormtype">
+                    <datalist id="type">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornato">
+                    </datalist>
+                </label>
+
+                <label class="severity" class="rating">Storm Severity: &nbsp;&nbsp;&nbsp; <br>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                </label>
+
+
+                <label class="region">Storm Region: <br>
+                    <select class="width">
+                        <option value="" disabled selected> Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <label class="dangerlevel">Are You In Danger?: <br>
+                    <input type="radio" name="dangerlevel" value="yes"> Yes<br>
+                    <input type="radio" name="dangerlevel" value="no"> No<br>
+                    <input type="radio" name="dangerlevel" value="maybe"> Maybe<br> 
+                </label>
+
+                <label class="comments">Additional Information: <br>
+                    <textarea class="width"rows="4" ></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" class="submitbutton" onclick="thanks()" value="Report Storm">
+        </form>
+
+
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; 2018 &bull; James Vergara R. &bull; 123-555-6789
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
