@@ -53,6 +53,7 @@ main {
 
 .contentbox {
     background-color: #eee;
+    align-content: center;
 }
 
 header {
@@ -409,6 +410,13 @@ input:focus {
 
 textarea {
     max-width: 300px;
+}
+
+.box {
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
 }
 
 
