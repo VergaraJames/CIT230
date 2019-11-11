@@ -304,111 +304,82 @@ figcaption {
 }
 
 
-/*  Form */
+/* Form */
 
-form fieldset {
-    margin: 2rem 0;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: .5rem 2%;
-    background-color: var(--primary);
+#hide {
+    display: none;
 }
 
-form legend {
-    color: #09203f;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-    font-size: larger;
-}
-
-form label.top,
-form label.details {
-    display: block;
-    padding-top: .3rem;
-    color: #09203f;
-    font-size: .9rem;
-}
-
-form label.top input,
-form label.details select {
-    display: block;
-    font-size: 1rem;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #01222c;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgb(252, 252, 252);
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-form label.details,
-.flexly {
-    display: block;
-    padding: .75rem 0;
-    color: #09203f;
-    font-size: 1rem;
-}
-
-form label.last {
-    display: block;
-    padding: .2rem 0;
-    color: #09203f;
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-form input.submitBtn {
+.submitbutton {
     border: none;
     background-color: #09203f;
-    color: #fcfcfd;
-    border-radius: 1rem;
-    padding: .75rem .5rem;
+    ;
+    color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
     margin: 0 0 2rem 2%;
-    width: 96%;
-    max-width: 15rem;
+    width: 100%;
+    max-width: 20rem;
 }
 
-form input.submitBtn:hover {
+.submitbutton:hover {
     background-color: lime;
     cursor: pointer;
 }
 
-form label.top input:required {
-    border-left: rgb(224, 35, 35) solid 3px;
-}
-
-form label.top input:required:valid {
-    border-left: #079B42 solid 3px;
-}
-
-input:focus {
-    box-shadow: 0 0 10px #ccc;
-}
-
-.flexly {
+.header {
+    padding: 5px 0;
     display: flex;
     align-items: center;
-    padding-top: 20px;
+    justify-content: center;
+    border-bottom: 3px solid white;
 }
 
-#ratingvalue {
-    margin: 0 15px;
-    padding-left: 0px;
+form {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    padding: .5px;
 }
 
-#calendar {
-    font-size: 1rem;
-    border: 1px solid #ccc;
+#zip,
+#name,
+#phone {
+    border-left: 5px solid red;
+}
+
+.width {
+    width: 305px;
+}
+
+legend {
+    font-size: 3em;
+    text-align: left;
+    font-family: "Great+Vibes", sans-serif;
+}
+
+fieldset {
+    margin: 15px;
+    background-color: rgb(219, 219, 219);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+input {
+    border: 1px solid black;
     border-radius: 4px;
-    padding: .75rem;
-    color: #09203f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(252, 252, 252);
 }
 
-textarea {
-    max-width: 300px;
+label {
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
 }
 
 

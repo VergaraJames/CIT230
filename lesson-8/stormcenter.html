@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Storm Center - CIT 230 Fall 2019</title>
-    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development">
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development" />
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"></script>
     <!--Get your own code at fontawesome.com  
         https://www.w3schools.com/icons/icons_reference.asp -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Favicon -->
@@ -47,7 +47,9 @@
             <ul class="navigation responsive">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li class="active"><a href="../lesson-5/preston-5.html">Preston</a></li>
+                <li class="active">
+                    <a href="../lesson-5/preston-5.html">Preston</a>
+                </li>
                 <li><a href="#">Soda Spring</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
@@ -57,78 +59,135 @@
         <!-- main -->
         <main>
             <h1>Storm Center</h1>
-            <form>
+            <form method="get" action="/lesson8/thanks.html">
                 <fieldset>
-                    <legend>Personal information:</legend>
-                    <label for="name">Full Name: <br>
-                          <input class="width" type="text" id="name" name="name"
-                              minlength="5" pattern="A-Za-z0-9" required>
-                      </label>
-                    <label for="email">Email: <br>
-                          <input class="width" type="email" placeholder="email@domain.com" id="email"
-                              size="30" required>
-                      </label>
-
-                    <label for="phone">Phone Number: <br>
-                          <input class="width" type="tel" id="phone" name="phone"
-                              required>
-                      </label>
-
-                    <label for="zipcode">Zip Code: <br>
-                          <input class="width" type="number" id="zip" name="zip"
-                              required>
-                      </label>
+                    <legend>Personal Information</legend>
+                    <label class="top">Full Name* <br />
+              <input
+                type="text"
+                name="fullname"
+                minlength="5"
+                pattern="[^0-9]+[a-zA-Z\s]{4,}"
+                required
+              /> </label
+            ><br />
+            <label class="top"
+              >Email<br />
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@email.com"
+              /> </label
+            ><br />
+            <label class="top"
+              >Phone* <br />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="1235551234"
+                required
+              /> </label
+            ><br />
+            <label class="top"
+              >Zip Code* <br />
+              <input type="number" name="zip" required />
+            </label>
                 </fieldset>
+
                 <fieldset>
-                    <legend>Storm Information:</legend>
-                    <label for="date">Date of Storm: <br>
-                          <input class="width" type="date" id="date" name="stormdate">
-                      </label>
+                    <legend>Storm Details</legend>
 
-                    <label for="type">Type of Storm: <br>
-                          <input class="width" list="type" name="stormtype">
-                          <datalist id="type">
-                              <option value="Flash Flood">  </option>
-                              <option value="Hail">  </option>
-                              <option value="Hurricane">  </option>
-                              <option value="Thunderstorm">  </option>
-                              <option value="Tornato">  </option>
-    
-                          </datalist>
-                      </label>
-
-                    <label class="severity" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp; <br>
-                          <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                              <span id="ratingvalue">5</span>
-                      </label>
-
-                    <label for="region">Storm Region: <br>
-                          <select class="width field select medium" tabindex="11">
-                              <option value="" disabled selected> Select Region...</option>
-                              <option value="preston">Preston</option>
-                              <option value="sodasprings">Soda Springs</option>
-                              <option value="fishhaven">Fish Haven</option>
-                          </select>
-                      </label>
-
-                    <label for="dangerlevel">Are You In Danger?: <br>
-                          <input type="radio" name="dangerlevel" value="yes"> Yes<br><br>
-                          <input type="radio" name="dangerlevel" value="no"> No<br><br>
-                          <input type="radio" name="dangerlevel" value="maybe"> Maybe<br><br> 
-                      </label>
-
-                    <label for="comments">Additional Information: <br>
-                          <textarea id="width"  rows="4" cols="40"> Briefly describe the storm information that you are observing at the scene...</textarea>
-                      </label>
+                    <label class="details">Storm Date <br /><input
+                type="date"
+                name="completeDate"
+                id="calendar"
+            /></label>
+                    <br />
+                    <label class="details">Storm Type
+              <select name="stormType" id="#">
+                <option value="">Please Select</option>
+                <option value="preston">Flash Flood</option>
+                <option value="fishHaven">Hail</option>
+                <option value="sodaSprings">Hurricane</option>
+                <option value="sodaSprings">Thunderstorm</option>
+                <option value="sodaSprings">Tornado</option>
+              </select>
+            </label>
+                    <br />
+                    <label class="flexly" for="rating">Storm Severity (1 to 10) &nbsp;&nbsp;&nbsp;<br />
+              <input
+                type="range"
+                id="rating"
+                value="5"
+                min="1"
+                max="10"
+                step="1"
+                list="tickmarks"
+                oninput="adjustRating(this.value)"
+                onchange="adjustRating(this.value)"
+              />
+              <span id="ratingvalue"></span>
+            </label>
+                    <datalist id="tickmarks">
+              <option value="0"> </option>
+              <option value="1"> </option>
+              <option value="2"> </option>
+              <option value="3"> </option>
+              <option value="4"> </option>
+              <option value="5"> </option>
+              <option value="6"> </option>
+              <option value="7"> </option>
+              <option value="8"> </option>
+              <option value="9"> </option>
+              <option value="10"> </option>
+            </datalist>
+                    <br />
+                    <label class="details">Region
+              <select name="region" id="region">
+                <option value="">Select Region</option>
+                <option value="preston">Preston</option>
+                <option value="fishHaven">Fish Haven</option>
+                <option value="sodaSprings">Soda Springs</option>
+              </select>
+            </label>
                 </fieldset>
-                <input type="submit" class="submitbutton" value="Report Storm">
+
+                <fieldset>
+                    <legend>Are you in danger?</legend>
+                    <div></div>
+                    <label class="last">
+              <input type="radio" name="audience" value="yes" />Yes
+            </label>
+                    <label class="last">
+              <input type="radio" name="audience" value="no" />No
+            </label>
+                    <label class="last">
+              <input type="radio" name="audience" value="maybe" />Maybe
+            </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information...</legend>
+                    <label for="textarea" class="last">
+              <textarea
+                rows="10"
+                cols="50"
+                type="text"
+                placeholder="Please Type Here..."
+              ></textarea>
+            </label>
+                </fieldset>
+                <br />
+                <input type="submit" value="Send My Report to Storm Center" class="submitBtn" onclick="thankyou()" />
             </form>
-
+            <br />
         </main>
         <!-- Footer -->
         <footer>
-            <p>Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span></p>
-            <p> James Vergara Rincon </p>
+            <p>
+                Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span>
+            </p>
+            <p>James Vergara Rincon</p>
         </footer>
         <!-- JavaScript Files -->
         <script src="js/main.js"></script>
