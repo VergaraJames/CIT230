@@ -1,0 +1,611 @@
+/* Small viewports */
+
+@import url("https://fonts.googleapis.com/css?family=Antic+Slab|Cookie|Cormorant+Garamond|Great+Vibes|Inconsolata|Karla|Lobster|Lusitana|Oswald|Sorts+Mill+Goudy");
+
+/* CSS Variables */
+
+ :root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+body {
+    line-height: 1.4;
+    padding: 0.5rem;
+    background: #ccc;
+    margin: 30px 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+.wrapper {
+    grid-gap: 10px;
+}
+
+.wrapper h1,
+h2 {
+    padding: 10px;
+    margin: 0 auto;
+    /*
+        max-width: 760px;
+        */
+    text-align: center;
+}
+
+.infoWide {
+    background: #ddd;
+    box-shadow: var(--shadow);
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.contentbox {
+    background-color: #eee;
+}
+
+header {
+    background-color: #09203f;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbanner {
+    height: 120px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.advice {
+    background-color: #fff;
+    color: black;
+    font-size: 0.9em;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 30px #111;
+}
+
+footer {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #09203f;
+    font-size: 0.75em;
+    line-height: 1em;
+    text-align: center;
+    background-color: #09203f;
+    height: 70px;
+    color: #fff;
+    font-family: "Lusitana", sans-serif;
+    margin: 1rem auto;
+}
+
+.subtitle {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: lawngreen;
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
+.title {
+    display: grid;
+    text-align: center;
+}
+
+#currentdate {
+    color: #ffd600;
+}
+
+
+/* Navigation Menu  */
+
+nav {
+    margin: 0 auto;
+    background-color: #09203f;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+
+.responsive li {
+    display: block;
+}
+
+.active {
+    background-color: var(--dark);
+    color: rgb(255, 255, 255);
+}
+
+.bold_Text {
+    font-style: italic;
+    color: #3e689d;
+    font-size: 1.1rem;
+}
+
+.logo {
+    float: left;
+    width: 90px;
+    height: 90px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.bodyLazy300 {
+    display: block;
+    text-align: center;
+    font-family: "Roboto", serif;
+    margin: 1rem auto;
+}
+
+.bodyLazy300 img {
+    display: block;
+    width: 300px;
+    height: 400px;
+    border: 0;
+    padding: 10px;
+}
+
+.grid-container {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 5px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.container {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1048px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+}
+
+figcaption {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    text-align: center;
+}
+
+
+/* hover effect */
+
+.norm:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.rocorn:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+
+/* rounded corners - boxmodel */
+
+.rocorn {
+    border-radius: 5px 150px;
+}
+
+
+/* simple opacity */
+
+.opac {
+    opacity: .5;
+}
+
+.blur {
+    filter: blur(1px) grayscale(75%);
+}
+
+.object {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.shape-outside {
+    border-radius: 100px;
+    width: 35%;
+    margin: 0 3em .5em 0;
+    float: left;
+    shape-outside: circle();
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.submitbutton {
+    border: none;
+    background-color: #7c8792;
+    ;
+    color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+    margin: 0 0 2rem 2%;
+    width: 100%;
+    max-width: 20rem;
+}
+
+.submitbutton:hover {
+    background-color: #505c68;
+    cursor: pointer;
+}
+
+.header {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid white;
+}
+
+
+/*----------- FORM --------------*/
+
+
+/*
+form header {
+    margin: 0 0 20px 0;
+}
+
+form header div {
+    font-size: 90%;
+    color: #999;
+}
+
+form header h2 {
+    margin: 0 0 5px 0;
+}
+
+form>div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 0 10px 0;
+}
+
+form>div>fieldset>div>div {
+    margin: 0 0 5px 0;
+}
+
+form>div>label,
+legend {
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+}
+
+form>div>div,
+form>div>fieldset>div {
+    width: 75%;
+    float: right;
+}
+
+form>div>fieldset label {
+    font-size: 90%;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+    width: 50%;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+    outline: 0;
+    border-color: #4697e4;
+}
+*/
+
+
+/*----------- FORM --------------*/
+
+.myform {
+    display: block;
+}
+
+form {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#zip,
+#name,
+#phone {
+    border-left: 5px solid red;
+}
+
+.width {
+    width: 305px;
+}
+
+legend {
+    font-size: 1.5em;
+}
+
+fieldset {
+    margin: 15px;
+    background-color: rgb(219, 219, 219);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(252, 252, 252);
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 0.5rem;
+}
+
+form label.top form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 0.8rem
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75 rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+
+/*-------Cards Lesson 09 -----------*/
+
+div.cards h2 {
+    color: navy;
+    padding: 1rem 0 0 0;
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.cards p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.75rem;
+}
+
+div.cards section {
+    border-radius: .2em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+    margin: .5rem;
+    padding: 1rem;
+}
+
+div.cards img {
+    width: 100%;
+}
+
+div.cards {
+    display: grid;
+    justify-content: center;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (min-width: 35em) {
+    /* Medium Screen */
+    .contentbox {
+        background-color: #bed;
+    }
+    header img {
+        width: 100%;
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation li a {
+        /* color: yellow; */
+        background: #ddd;
+        display: block;
+        text-decoration: none;
+        padding: 0.8rem;
+        text-align: center;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        box-shadow: var(--shadow);
+    }
+    div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    /* Large Style */
+    * {
+        padding: 0px;
+        line-height: 0.8em;
+    }
+    header img {
+        width: 100%;
+    }
+    .headings h1 {
+        font-size: 3rem;
+    }
+    .subtitle {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-left: 17px;
+    }
+    .contentbox {
+        background-color: #ccc;
+    }
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    /* new 3 pictures */
+    .grid-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        margin: 10px auto;
+        border: 1px dashed #000;
+        padding: 5px;
+    }
+    .headings h1 {
+        font-size: 1.5rem;
+    }
+    .subtitle {
+        letter-spacing: 0.5pt;
+        font-size: small;
+        margin-left: 10px;
+    }
+    div.cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
