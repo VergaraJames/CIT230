@@ -529,6 +529,52 @@ div.cards {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+/*-------Cards Lesson 09 Weather Wind Vane --------*/
+
+div.cardsww h2 {
+    color: navy;
+    padding: 1rem 0 0 0;
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'Cormorant+Garamond', Arial, sans-serif;
+}
+
+div.cardsww h3 {
+    color: limegreen;
+    padding: 1rem 0 0 0;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: 'Inconsolata', Arial, sans-serif;
+}
+
+div.cardsww p {
+    text-align: center;
+    color: purple;
+    font-family: 'Cookie', Times, serif;
+    font-size: 1rem;
+}
+
+div.cardsww section {
+    border-radius: .2em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+    margin: .5rem;
+    padding: 1rem;
+}
+
+div.cardsww img {
+    width: 100%;
+}
+
+div.cardsww {
+    display: grid;
+    justify-content: center;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 @media only screen and (min-width: 35em) {
     /* Medium Screen */
     .contentbox {
@@ -560,6 +606,9 @@ div.cards {
         box-shadow: var(--shadow);
     }
     div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div.cardsww {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -607,5 +656,8 @@ div.cards {
     }
     div.cards {
         grid-template-columns: repeat(4, 1fr);
+    }
+    div.cardsww {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
