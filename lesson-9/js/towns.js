@@ -26,7 +26,7 @@ fetch(requestURL)
 
                 //Create image element and content
                 let image = document.createElement("img");
-                image.setAttribute("src", town.photo);
+                image.setAttribute("src", `images/${town.photo}`);
                 image.setAttribute("alt", `Picture of ${town.name}`);
 
                 //Append elements to the card
