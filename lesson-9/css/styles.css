@@ -543,16 +543,16 @@ div.cardsww h2 {
 div.cardsww h3 {
     color: limegreen;
     padding: 1rem 0 0 0;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     text-align: center;
-    font-family: 'Inconsolata', Arial, sans-serif;
+    font-family: 'Cookie', Times, serif;
 }
 
 div.cardsww p {
     text-align: center;
     color: purple;
-    font-family: 'Cookie', Times, serif;
-    font-size: 1rem;
+    font-size: 0.75rem;
+    font-family: 'Inconsolata', Arial, sans-serif;
 }
 
 div.cardsww section {
