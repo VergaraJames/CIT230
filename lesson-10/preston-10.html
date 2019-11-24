@@ -25,17 +25,12 @@
 </head>
 
 <body>
+    <p class="banner clearfix hide"><i class="fas fa-times" onclick="pancakes()"></i> Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion. </p>
+
     <div class="wrapper">
         <!-- Header -->
         <header class="topbanner clearfix">
-            <div class="advice" id="5" style="display:none">
-                <p>
-                    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-                </p>
-            </div>
-            <script>
-                showhide();
-            </script>
+
             <!-- Logo -->
             <figure class="logo">
                 <img src="images/logo.png" alt="logo" srcset="
@@ -73,20 +68,21 @@
                     <div class="contentbox">
                         <div class="herodiv">
                             <picture>
-                                <source media="(min-width: 800px)" srcset="images/Image_1024.jpg">
-                                <source media="(min-width: 500px)" srcset="images/image_600.jpg">
-                                <source media="(min-width: 300px)" srcset="images/image_200.jpg">
-                                <img src="images/image_Original.jpg" alt="Franklin County Landscape">
+                                <source media="(min-width: 800px)" srcset="images/Image_1024.jpg" />
+                                <source media="(min-width: 500px)" srcset="images/image_600.jpg" />
+                                <source media="(min-width: 300px)" srcset="images/image_200.jpg" />
+                                <img src="images/image_Original.jpg" alt="Franklin County Landscape" />
                             </picture>
-
                             <section class="stats">
                                 <h2>Weather Summary</h2>
-                                <p>Currently: <span id='description'>?</span></p>
-                                <p>Temperature: <span id='temperature'>?</span> &deg;F</p>
-                                <p class='windchill'>Wind Chill: <span id='windchill'>?</span> &deg;F</p>
-                                <p>High: <span id='hightemp'>?</span> &deg;F</p>
-                                <p>Humidity: <span id='humidity'>?</span>%</p>
-                                <p>Wind Speed: <span id='windspeed'>10</span> mph</p>
+                                <p>Currently: <span id="description"> </span></p>
+                                <p>Temperature: <span id="temperature"> </span> &deg;F</p>
+                                <p class="windchill">
+                                    Wind Chill: <span id="windchill"> </span> &deg;F
+                                </p>
+                                <p>High: <span id="hightemp"> </span> &deg;F</p>
+                                <p>Humidity: <span id="humidity"> </span>%</p>
+                                <p>Wind Speed: <span id="windspeed"> </span> mph</p>
                             </section>
                         </div>
                     </div>
@@ -94,33 +90,8 @@
                 <!-- Info Section 2 -->
                 <section class="forecast">
                     <div class="contentbox">
-                        <h1>Forecast</h1>
-                        <table>
-                            <tr>
-                                <th>Sunday</th>
-                                <th>Monday</th>
-                                <th>Tuesday</th>
-                                <th>Wednesday</th>
-                                <th>Thursday</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img class="icon" src="images/sun.jpg" /><br /> 40&#8457;
-                                </td>
-                                <td>
-                                    <img class="icon" src="images/rain.png" /><br /> 38&#8457;
-                                </td>
-                                <td>
-                                    <img class="icon" src="images/rain2.jpg" /><br /> 36&#8457;
-                                </td>
-                                <td>
-                                    <img class="icon" src="images/sun.jpg" /><br /> 38&#8457;
-                                </td>
-                                <td>
-                                    <img class="icon" src="images/rain2.jpg" /><br /> 36&#8457;
-                                </td>
-                            </tr>
-                        </table>
+                        <h1>Forecast - 5 next days</h1>
+                        <div id="five-day-grid"></div>
                     </div>
                 </section>
                 <!-- Info Section 3 -->

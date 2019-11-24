@@ -1,10 +1,8 @@
-/* Small viewports */
-
 @import url("https://fonts.googleapis.com/css?family=Antic+Slab|Cookie|Cormorant+Garamond|Great+Vibes|Inconsolata|Karla|Lobster|Lusitana|Oswald|Sorts+Mill+Goudy");
 
 /* CSS Variables */
 
- :root {
+:root {
     --primary: #ddd;
     --dark: #333;
     --light: #fff;
@@ -85,6 +83,28 @@ header {
     height: 120px;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+
+/* Banner Pancakes */
+
+.banner {
+    background-color: #9abcff;
+    color: #371f99;
+    padding: 0.25em 0.5em 0.25em 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner .fa-times {
+    display: block;
+    float: right;
+    padding-top: 0.25em;
+}
+
+.banner .fa-times:hover {
+    color: #cc9466;
 }
 
 .advice {
@@ -468,9 +488,8 @@ tbody tr:nth-child(even) {
     box-shadow: 0 0 30px #333;
 }
 
-#hide {
-    display: flex;
-    /*    display: none; */
+.hide {
+    display: none;
 }
 
 .icon {
@@ -671,6 +690,46 @@ div.cardsww {
 .weather img {
     width: 50px;
     margin: 0 auto;
+}
+
+
+/* forecast table 5 next days */
+
+#five-day-grid {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    margin: auto auto;
+    margin-bottom: 2rem;
+    width: 450px;
+}
+
+#five-day-grid .daily-forecast {
+    text-align: center;
+}
+
+#five-day-grid .daily-forecast .dow {
+    margin: 1px;
+    padding: 4px;
+    background-color: #7a66cc;
+    color: white;
+    font-weight: bold;
+}
+
+#five-day-grid .daily-forecast .weather-icon {
+    margin: 1px;
+    padding: 4px;
+    width: 87px;
+    border: 1px solid black;
+    background-color: #cddeff;
+}
+
+#five-day-grid .daily-forecast .temp {
+    margin: 1px;
+    padding: 4px;
+    border: 1px solid #371f99;
+    background-color: white;
 }
 
 @media only screen and (min-width: 35em) {
