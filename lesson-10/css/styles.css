@@ -57,6 +57,15 @@ h2 {
     max-width: 760px;
 }
 
+.forecast {
+    background: #ddd;
+    box-shadow: var(--shadow);
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
 .contentbox {
     background-color: #eee;
 }
@@ -314,87 +323,163 @@ figcaption {
 }
 
 
-/*----------- FORM --------------*/
+/* Insert new - size of logo */
 
-
-/*
-form header {
-    margin: 0 0 20px 0;
+header {
+    padding: 0.5rem 2%;
 }
 
-form header div {
-    font-size: 90%;
-    color: #999;
+header h1 {
+    margin: 0;
 }
 
-form header h2 {
-    margin: 0 0 5px 0;
+header h2 {
+    margin: 0;
+    font-weight: normal;
 }
 
-form>div {
-    clear: both;
-    overflow: hidden;
-    padding: 1px;
-    margin: 0 0 10px 0;
-}
-
-form>div>fieldset>div>div {
-    margin: 0 0 5px 0;
-}
-
-form>div>label,
-legend {
-    width: 25%;
+header figure.logo {
     float: left;
-    padding-right: 10px;
+    margin: 0 2% 0 0;
 }
 
-form>div>div,
-form>div>fieldset>div {
-    width: 75%;
-    float: right;
+
+/* clearfix: Force an element no to collapse */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-form>div>fieldset label {
-    font-size: 90%;
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    /* display: flex; */
 }
 
-fieldset {
-    border: 0;
-    padding: 0;
-}
-
-input[type=text],
-input[type=email],
-input[type=url],
-input[type=password],
-textarea {
+.herodiv img {
     width: 100%;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    display: flex;
 }
 
-input[type=text],
-input[type=email],
-input[type=url],
-input[type=password] {
-    width: 50%;
+.stats {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    left: 60px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #000;
+    opacity: 0.8;
+    padding: 0.5rem;
+    background: radial-gradient(#eee, #8998b6);
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.59);
 }
 
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=password]:focus,
-textarea:focus {
-    outline: 0;
-    border-color: #4697e4;
+.stats p {
+    line-height: 10%;
 }
-*/
+
+.forest {
+    max-width: 250px;
+    float: right;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.forest p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 5px 5px 5px;
+}
 
 
-/*----------- FORM --------------*/
+/* tables */
+
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px rgb(98, 140, 166);
+}
+
+thead,
+tfoot {
+    background-color: #7fb9c2;
+}
+
+thead {
+    font-size: 1.25rem;
+}
+
+tfoot {
+    font-size: .75rem;
+    text-align: center;
+}
+
+td,
+th {
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#highlight {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody th {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+.contact {
+    height: 300px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.contact p,
+.contact h3 {
+    position: relative;
+    left: 30px;
+}
+
+.map {
+    float: right;
+    margin-top: 0rem;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    padding: 5px;
+    box-shadow: 0 0 30px #333;
+}
+
+#hide {
+    display: flex;
+    /*    display: none; */
+}
+
+.icon {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+
+/* form */
 
 .myform {
     display: block;
@@ -590,9 +675,6 @@ div.cardsww {
 
 @media only screen and (min-width: 35em) {
     /* Medium Screen */
-    .contentbox {
-        background-color: #bed;
-    }
     header img {
         width: 100%;
     }
@@ -642,9 +724,6 @@ div.cardsww {
         letter-spacing: 1.5pt;
         font-size: larger;
         margin-left: 17px;
-    }
-    .contentbox {
-        background-color: #ccc;
     }
     form label.sbs {
         padding: .4rem 0;
