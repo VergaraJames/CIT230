@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    line-height: 1.4;
+    line-height: 1.7rem;
     padding: 0.5rem;
     background: #ccc;
     margin: 30px 50px;
@@ -24,7 +24,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     color: black;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Cormorant+Garamond", sans-serif;
     display: block;
 }
 
@@ -58,14 +58,20 @@ h2 {
 .forecast {
     background: #ddd;
     box-shadow: var(--shadow);
-    display: flex;
+    max-width: 760px;
     padding: 10px;
     margin: 0 auto;
-    max-width: 760px;
 }
 
 .contentbox {
     background-color: #eee;
+    color: navy;
+    padding: 1rem 0 0 0;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    font-family: "Ubuntu", sans-serif;
+    margin: 1rem auto;
 }
 
 header {
@@ -462,7 +468,7 @@ tbody tr:nth-child(even) {
 }
 
 .contact {
-    height: 300px;
+    height: auto;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -478,14 +484,19 @@ tbody tr:nth-child(even) {
 }
 
 .map {
-    float: right;
+    display: block;
     margin-top: 0rem;
     border-radius: 10px;
     width: 300px;
     height: 200px;
-    display: flex;
     padding: 5px;
     box-shadow: 0 0 30px #333;
+    /*
+    display: flex;
+        float: right;
+
+
+    */
 }
 
 .hide {
@@ -696,10 +707,8 @@ div.cardsww {
 /* forecast table 5 next days */
 
 #five-day-grid {
-    background-color: white;
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid black;
     margin: auto auto;
     margin-bottom: 2rem;
     width: 450px;
