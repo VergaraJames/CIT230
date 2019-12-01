@@ -1,0 +1,823 @@
+@import url("https://fonts.googleapis.com/css?family=Antic+Slab|Cookie|Cormorant+Garamond|Great+Vibes|Inconsolata|Karla|Lobster|Lusitana|Oswald|Sorts+Mill+Goudy");
+
+/* CSS Variables */
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+body {
+    line-height: 1.7rem;
+    padding: 0.5rem;
+    background: #ccc;
+    margin: 30px 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: black;
+    font-family: "Cormorant+Garamond", sans-serif;
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+.wrapper {
+    grid-gap: 10px;
+}
+
+.wrapper h1,
+h2 {
+    padding: 10px;
+    margin: 0 auto;
+    /*
+        max-width: 760px;
+        */
+    text-align: center;
+}
+
+.infoWide {
+    background: #ddd;
+    box-shadow: var(--shadow);
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.forecast {
+    background: #ddd;
+    box-shadow: var(--shadow);
+    max-width: 760px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.contentbox {
+    background-color: #eee;
+    color: navy;
+    padding: 1rem 0 0 0;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    font-family: "Ubuntu", sans-serif;
+    margin: 1rem auto;
+}
+
+header {
+    background-color: #09203f;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbanner {
+    height: 120px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+/* Banner Pancakes */
+
+.banner {
+    background-color: #9abcff;
+    color: #371f99;
+    padding: 0.25em 0.5em 0.25em 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner .fa-times {
+    display: block;
+    float: right;
+    padding-top: 0.25em;
+}
+
+.banner .fa-times:hover {
+    color: #cc9466;
+}
+
+.advice {
+    background-color: #fff;
+    color: black;
+    font-size: 0.9em;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 30px #111;
+}
+
+footer {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #09203f;
+    font-size: 0.75em;
+    line-height: 1em;
+    text-align: center;
+    background-color: #09203f;
+    height: 70px;
+    color: #fff;
+    font-family: "Lusitana", sans-serif;
+    margin: 1rem auto;
+}
+
+.subtitle {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: lawngreen;
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
+.title {
+    display: grid;
+    text-align: center;
+}
+
+#currentdate {
+    color: #ffd600;
+}
+
+
+/* Navigation Menu  */
+
+nav {
+    margin: 0 auto;
+    background-color: #09203f;
+}
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+
+.responsive li {
+    display: block;
+}
+
+.active {
+    background-color: var(--dark);
+    color: rgb(255, 255, 255);
+}
+
+.bold_Text {
+    font-style: italic;
+    color: #3e689d;
+    font-size: 1.1rem;
+}
+
+.logo {
+    float: left;
+    width: 90px;
+    height: 90px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.bodyLazy300 {
+    display: block;
+    text-align: center;
+    font-family: "Roboto", serif;
+    margin: 1rem auto;
+}
+
+.bodyLazy300 img {
+    display: block;
+    width: 300px;
+    height: 400px;
+    border: 0;
+    padding: 10px;
+}
+
+.grid-container {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 5px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.container {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1048px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+}
+
+figcaption {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    text-align: center;
+}
+
+
+/* hover effect */
+
+.norm:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.rocorn:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+
+/* rounded corners - boxmodel */
+
+.rocorn {
+    border-radius: 5px 150px;
+}
+
+
+/* simple opacity */
+
+.opac {
+    opacity: .5;
+}
+
+.blur {
+    filter: blur(1px) grayscale(75%);
+}
+
+.object {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.shape-outside {
+    border-radius: 100px;
+    width: 35%;
+    margin: 0 3em .5em 0;
+    float: left;
+    shape-outside: circle();
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.submitbutton {
+    border: none;
+    background-color: #7c8792;
+    ;
+    color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+    margin: 0 0 2rem 2%;
+    width: 100%;
+    max-width: 20rem;
+}
+
+.submitbutton:hover {
+    background-color: #505c68;
+    cursor: pointer;
+}
+
+.header {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid white;
+}
+
+
+/* Insert new - size of logo */
+
+header {
+    padding: 0.5rem 2%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+header figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+
+/* clearfix: Force an element no to collapse */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    /* display: flex; */
+}
+
+.herodiv img {
+    width: 100%;
+    display: flex;
+}
+
+.stats {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    left: 60px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #000;
+    opacity: 0.8;
+    padding: 0.5rem;
+    background: radial-gradient(#eee, #8998b6);
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.59);
+}
+
+.stats p {
+    line-height: 10%;
+}
+
+.forest {
+    max-width: 250px;
+    float: right;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.forest p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 5px 5px 5px;
+}
+
+
+/* tables */
+
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px rgb(98, 140, 166);
+}
+
+thead,
+tfoot {
+    background-color: #7fb9c2;
+}
+
+thead {
+    font-size: 1.25rem;
+}
+
+tfoot {
+    font-size: .75rem;
+    text-align: center;
+}
+
+td,
+th {
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#highlight {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody th {
+    background-color: #628ca6;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+.contact {
+    height: auto;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.contact p,
+.contact h3 {
+    position: relative;
+    left: 30px;
+}
+
+.map {
+    display: block;
+    margin-top: 0rem;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    box-shadow: 0 0 30px #333;
+    /*
+    display: flex;
+        float: right;
+
+
+    */
+}
+
+.hide {
+    display: none;
+}
+
+.icon {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+
+/* form */
+
+.myform {
+    display: block;
+}
+
+form {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#zip,
+#name,
+#phone {
+    border-left: 5px solid red;
+}
+
+.width {
+    width: 305px;
+}
+
+legend {
+    font-size: 1.5em;
+}
+
+fieldset {
+    margin: 15px;
+    background-color: rgb(219, 219, 219);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(252, 252, 252);
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 0.5rem;
+}
+
+form label.top form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 0.8rem
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75 rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+
+/*-------Cards Lesson 09 -----------*/
+
+div.cards h2 {
+    color: navy;
+    padding: 1rem 0 0 0;
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.cards p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.75rem;
+}
+
+div.cards section {
+    border-radius: .2em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+    margin: .5rem;
+    padding: 1rem;
+}
+
+div.cards img {
+    width: 100%;
+}
+
+div.cards {
+    display: grid;
+    justify-content: center;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*-------Cards Lesson 09 Weather Wind Vane --------*/
+
+div.cardsww h2 {
+    color: navy;
+    padding: 1rem 0 0 0;
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'Cormorant+Garamond', Arial, sans-serif;
+}
+
+div.cardsww h3 {
+    color: limegreen;
+    padding: 1rem 0 0 0;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Cookie', Times, serif;
+}
+
+div.cardsww p {
+    text-align: center;
+    color: purple;
+    font-size: 0.75rem;
+    font-family: 'Inconsolata', Arial, sans-serif;
+}
+
+div.cardsww section {
+    border-radius: .2em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+    margin: .5rem;
+    padding: 1rem;
+}
+
+div.cardsww img {
+    width: 100%;
+}
+
+div.cardsww {
+    display: grid;
+    justify-content: center;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* API test id = weather */
+
+.weather {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.weather img {
+    width: 50px;
+    margin: 0 auto;
+}
+
+
+/* forecast table 5 next days */
+
+#five-day-grid {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto auto;
+    margin-bottom: 2rem;
+    width: 450px;
+}
+
+#five-day-grid .daily-forecast {
+    text-align: center;
+}
+
+#five-day-grid .daily-forecast .dow {
+    margin: 1px;
+    padding: 4px;
+    background-color: #7a66cc;
+    color: white;
+    font-weight: bold;
+}
+
+#five-day-grid .daily-forecast .weather-icon {
+    margin: 1px;
+    padding: 4px;
+    width: 87px;
+    border: 1px solid black;
+    background-color: #cddeff;
+}
+
+#five-day-grid .daily-forecast .temp {
+    margin: 1px;
+    padding: 4px;
+    border: 1px solid #371f99;
+    background-color: white;
+}
+
+@media only screen and (min-width: 35em) {
+    /* Medium Screen */
+    header img {
+        width: 100%;
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation li a {
+        /* color: yellow; */
+        background: #ddd;
+        display: block;
+        text-decoration: none;
+        padding: 0.8rem;
+        text-align: center;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        box-shadow: var(--shadow);
+    }
+    div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div.cardsww {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    /* Large Style */
+    * {
+        padding: 0px;
+        line-height: 0.8em;
+    }
+    header img {
+        width: 100%;
+    }
+    .headings h1 {
+        font-size: 3rem;
+    }
+    .subtitle {
+        letter-spacing: 1.5pt;
+        font-size: larger;
+        margin-left: 17px;
+    }
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    /* new 3 pictures */
+    .grid-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        margin: 10px auto;
+        border: 1px dashed #000;
+        padding: 5px;
+    }
+    .headings h1 {
+        font-size: 1.5rem;
+    }
+    .subtitle {
+        letter-spacing: 0.5pt;
+        font-size: small;
+        margin-left: 10px;
+    }
+    div.cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    div.cardsww {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

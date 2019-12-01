@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Storm Center - CIT 230 Fall 2019</title>
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development" />
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"></script>
+    <!--Get your own code at fontawesome.com  
+        https://www.w3schools.com/icons/icons_reference.asp -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="topbanner">
+            <div class="advice" id="5" style="display:none">
+                <p>
+                    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+                </p>
+            </div>
+            <script>
+                showhide();
+            </script>
+            <!-- Logo -->
+            <figure class="logo">
+                <img src="images/logo.png" />
+            </figure>
+            <!-- Title -->
+            <section class="headings">
+                <h1 class="title">Weather Wind Vane</h1>
+                <p class="subtitle">Looking at the sky</p>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <!-- nav Menu -->
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="../lesson-11/index.html">Home</a></li>
+                <li class="active"> <a href="../lesson-11/preston.html">Preston</a> </li>
+                <li><a href="../lesson-11/sodaspring.html">Soda Spring</a></li>
+                <li><a href="../lesson-11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="../lesson-11/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson-11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <!-- main -->
+        <main>
+            <div class="wrapper">
+                <!-- Info Section 1 -->
+                <h1>Weather Wind Vane</h1>
+                <h1>Storm Center</h1>
+                <section class="infoWide">
+                    <form method="get" action="../lesson-11/thankyou.html">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label class="top">Full Name* <br />
+              <input
+                type="text"
+                name="fullname"
+                minlength="5"
+                pattern="[^0-9]+[a-zA-Z\s]{4,}"
+                required
+              /> </label
+            ><br />
+            <label class="top"
+              >Email<br />
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@email.com"
+              /> </label
+            ><br />
+            <label class="top"
+              >Phone* <br />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="1235551234"
+                required
+              /> </label
+            ><br />
+            <label class="top"
+              >Zip Code* <br />
+              <input type="number" name="zip" required />
+            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Storm Details</legend>
+
+                            <label class="details">Storm Date <br /><input
+                type="date"
+                name="completeDate"
+                id="calendar"
+            /></label>
+                            <br />
+                            <label class="details">Storm Type
+              <select name="stormType" id="#">
+                <option value="">Please Select</option>
+                <option value="preston">Flash Flood</option>
+                <option value="fishHaven">Hail</option>
+                <option value="sodaSprings">Hurricane</option>
+                <option value="sodaSprings">Thunderstorm</option>
+                <option value="sodaSprings">Tornado</option>
+              </select>
+            </label>
+                            <br />
+                            <label class="flexly" for="rating">Storm Severity (1 to 10) &nbsp;&nbsp;&nbsp;<br />
+              <input
+                type="range"
+                id="rating"
+                value="5"
+                min="1"
+                max="10"
+                step="1"
+                list="tickmarks"
+                oninput="adjustRating(this.value)"
+                onchange="adjustRating(this.value)"
+              />
+              <span id="ratingvalue"></span>
+            </label>
+                            <datalist id="tickmarks">
+              <option value="0"> </option>
+              <option value="1"> </option>
+              <option value="2"> </option>
+              <option value="3"> </option>
+              <option value="4"> </option>
+              <option value="5"> </option>
+              <option value="6"> </option>
+              <option value="7"> </option>
+              <option value="8"> </option>
+              <option value="9"> </option>
+              <option value="10"> </option>
+            </datalist>
+                            <br />
+                            <label class="details">Region
+              <select name="region" id="region">
+                <option value="">Select Region</option>
+                <option value="preston">Preston</option>
+                <option value="fishHaven">Fish Haven</option>
+                <option value="sodaSprings">Soda Springs</option>
+              </select>
+            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Are you in danger?</legend>
+                            <div></div>
+                            <label class="last">
+              <input type="radio" name="audience" value="yes" />Yes
+            </label>
+                            <label class="last">
+              <input type="radio" name="audience" value="no" />No
+            </label>
+                            <label class="last">
+              <input type="radio" name="audience" value="maybe" />Maybe
+            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Additional Information...</legend>
+                            <label for="textarea" class="last">
+              <textarea
+                rows="10"
+                cols="50"
+                type="text"
+                placeholder="Please Type Here..."
+              ></textarea>
+            </label>
+                        </fieldset>
+                        <br />
+                        <input type="submit" value="Send My Report to Storm Center" class="submitBtn" />
+                    </form>
+                    <br />
+
+                </section>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>
+                Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span>
+            </p>
+            <p>James Vergara Rincon</p>
+        </footer>
+        <!-- JavaScript Files -->
+        <script src="js/main.js"></script>
+        <script src="js/lazyloadJVR.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/towns.js"></script>
+        <script src="js/apiweatherpreston.js"></script>
+    </div>
+</body>
+
+</html>

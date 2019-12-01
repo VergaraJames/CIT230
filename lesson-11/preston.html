@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Preston Town Page - CIT 230 Fall 2019</title>
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development" />
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"></script>
+    <!--Get your own code at fontawesome.com  
+        https://www.w3schools.com/icons/icons_reference.asp -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/small.css">
+-->
+</head>
+
+<body>
+    <p class="banner clearfix hide"><i class="fas fa-times" onclick="pancakes()"></i> Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion. </p>
+
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="topbanner clearfix">
+
+            <!-- Logo -->
+            <figure class="logo">
+                <img src="images/logo.png" alt="logo" srcset="
+              images/logo1.png 1x,
+              images/logo2.png 2x,
+              images/logo3.png 3x
+            " />
+            </figure>
+            <!-- Title -->
+            <section class="headings">
+                <h1 class="title">Weather Wind Vane</h1>
+                <p class="subtitle">Looking at the sky</p>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <!-- nav Menu -->
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="../lesson-11/index.html">Home</a></li>
+                <li class="active"> <a href="../lesson-11/preston.html">Preston</a> </li>
+                <li><a href="../lesson-11/sodaspring.html">Soda Spring</a></li>
+                <li><a href="../lesson-11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="../lesson-11/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson-11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="clearfix">
+            <div class="wrapper">
+                <!-- Info Section 1 -->
+                <h1>Preston Idaho</h1>
+                <section class="infoWide">
+                    <div class="contentbox">
+                        <div class="herodiv">
+                            <picture>
+                                <source media="(min-width: 800px)" srcset="images/image_1024.jpg" />
+                                <source media="(min-width: 500px)" srcset="images/image_600.jpg" />
+                                <source media="(min-width: 300px)" srcset="images/image_200.jpg" />
+                                <img src="images/image_Original.jpg" alt="Franklin County Landscape" />
+                            </picture>
+                            <section class="stats">
+                                <h2>Weather Summary</h2>
+                                <p>Currently: <span id="description"> </span></p>
+                                <p>Temperature: <span id="temperature"> </span> &deg;F</p>
+                                <p class="windchill">
+                                    Wind Chill: <span id="windchill"> </span> &deg;F
+                                </p>
+                                <p>High: <span id="hightemp"> </span> &deg;F</p>
+                                <p>Humidity: <span id="humidity"> </span>%</p>
+                                <p>Wind Speed: <span id="windspeed"> </span> mph</p>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <!-- Info Section 2 -->
+                <section class="forecast">
+                    <div class="contentbox">
+                        <h1>Forecast - 5 next days</h1>
+                        <div id="five-day-grid"></div>
+                    </div>
+                </section>
+                <!-- Info Section 3 -->
+                <section class="infoWide">
+                    <div class="contentbox">
+                        <img class="forest" src="images/huracan.jpg" />
+                        <h2>Article Title</h2>
+                        <p>By: James Vergara</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla
+                            pariatur nisi ut aliquip ex ea commodo consequat. Duis aute fugiat nulla pariatur. Excepteur sint
+                        </p>
+                    </div>
+                </section>
+                <!-- Info Section 4 -->
+                <section class="infoWide">
+                    <div class="contact">
+                        <h3>Weather Wind Vane - Contact information</h3>
+                        <img id="hide" class="map" src="images/Preston_map.png" />
+                        <div>
+                            <table>
+                                <tr>
+                                    <p>
+                                        <i class="fas fa-map-marker-alt" style="font-size:24px"></i> 165 N 8th W, Preston, ID 83263, Estados Unidos
+                                    </p>
+                                    <p>
+                                        <i class="fas fa-phone" style="font-size:24px"></i> +1-801-123-1234
+                                    </p>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://www.twitter.com" target="_blank"><img class="icon" src="images/twitter2.png" alt="Twitter" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.facebook.com" target="_blank"><img class="icon" src="images/facebook2.png" alt="facebook" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.pinterest.com" target="_blank"><img class="icon" src="images/pinterest.png" alt="pinterest" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.youtube.com" target="_blank"><img class="icon" src="images/youtube.png" alt="youtube" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="https://https://www.linkedin.com" target="_blank"><img class="icon" src="images/linkedn2.png" alt="linkedn" /></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>
+                Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span>
+            </p>
+            <p>James Vergara Rincon</p>
+        </footer>
+        <!-- JavaScript Files -->
+        <script src="js/main.js"></script>
+        <script src="js/lazyloadJVR.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/towns.js"></script>
+        <script src="js/apiweatherpreston.js"></script>
+    </div>
+</body>
+
+</html>
