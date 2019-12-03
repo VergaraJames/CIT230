@@ -63,14 +63,33 @@ h2 {
     margin: 0 auto;
 }
 
-.contentbox {
+.contentbox1 {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1em;
+    padding: 0.5rem;
+    color: black;
+    font-family: "Cormorant+Garamond", sans-serif;
+}
+
+.contentbox2 {
+    color: navy;
+    padding: 1rem 0 0 0;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    font-family: "Verdana", sans-serif;
+    margin: 1rem auto;
+}
+
+.contentbox3 {
     background-color: #eee;
     color: navy;
     padding: 1rem 0 0 0;
     text-align: left;
     font-size: 1.1em;
     line-height: 1.1em;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 1rem auto;
 }
 
@@ -394,8 +413,8 @@ header figure.logo {
     top: 40px;
     right: 40px;
     left: 60px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 240px;
     border: 1px solid #000;
     opacity: 0.8;
     padding: 0.5rem;
