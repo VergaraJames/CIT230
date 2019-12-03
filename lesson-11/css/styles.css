@@ -51,8 +51,8 @@ h2 {
     box-shadow: var(--shadow);
     display: flex;
     padding: 10px;
-    margin: 0 auto;
     max-width: 760px;
+    margin: 1rem auto;
 }
 
 .forecast {
@@ -84,11 +84,11 @@ h2 {
 
 .contentbox3 {
     font-size: 1.1em;
-    font-family: "Verdana", sans-serif;
-    margin: 1rem auto;
     text-align: left;
     padding: 1rem 0 0 0;
     color: black;
+    font-family: "Lusitana", sans-serif;
+    margin: 1rem auto;
 }
 
 header {
