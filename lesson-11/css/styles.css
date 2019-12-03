@@ -76,7 +76,7 @@ h2 {
     color: navy;
     padding: 1rem 0 0 0;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 0.8em;
     line-height: 1.1em;
     font-family: "Verdana", sans-serif;
     margin: 1rem auto;
@@ -457,7 +457,9 @@ tfoot {
 td,
 th {
     text-align: center;
+    /*
     border: 1px solid grey;
+    */
     padding: 10px;
 }
 
@@ -854,6 +856,7 @@ div.cardsww {
     }
     header img {
         width: 100%;
+        height: auto;
     }
     .headings h1 {
         font-size: 3rem;
