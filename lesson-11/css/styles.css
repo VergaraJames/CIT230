@@ -570,53 +570,111 @@ label {
     padding: 5px;
 }
 
+
+/*  Form */
+
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid black;
     border-radius: 10px;
-    padding: .5rem 2%
+    padding: .5rem 2%;
+    background-color: var(--primary);
 }
 
 form legend {
-    color: #445ba9;
-    margin: 0 0.5rem;
+    color: #09203f;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: larger;
 }
 
-form label.top form div {
+form label.top,
+form label.details {
     display: block;
-    padding-top: 1rem;
-    color: #9c2c13;
-    font-size: 0.8rem
+    padding-top: .3rem;
+    color: #09203f;
+    font-size: .9rem;
 }
 
 form label.top input,
-form label.top select {
+form label.details select {
     display: block;
     font-size: 1rem;
-    border: solid 1px #999;
+    border: 1px solid black;
     border-radius: 4px;
-    padding: 0.75;
-    color: #555;
+    padding: .75rem;
+    color: #01222c;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(252, 252, 252);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-form label.sbs {
+form label.details,
+.flexly {
     display: block;
-    padding: 0.75 rem 0;
-    color: #555;
+    padding: .75rem 0;
+    color: #09203f;
+    font-size: 1rem;
+}
+
+form label.last {
+    display: block;
+    padding: .2rem 0;
+    color: #09203f;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 form input.submitBtn {
     border: none;
-    background-color: #9c2c13;
-    color: white;
+    background-color: #09203f;
+    color: #fcfcfd;
     border-radius: 1rem;
-    padding: .75 1.5rem;
+    padding: .75rem .5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
-    max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+    background-color: lime;
+    cursor: pointer;
+}
+
+form label.top input:required {
+    border-left: rgb(224, 35, 35) solid 3px;
+}
+
+form label.top input:required:valid {
+    border-left: #079B42 solid 3px;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.flexly {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#ratingvalue {
+    margin: 0 15px;
+    padding-left: 0px;
+}
+
+#calendar {
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #09203f;
+}
+
+textarea {
+    max-width: 300px;
 }
 
 
