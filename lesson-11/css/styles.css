@@ -83,14 +83,12 @@ h2 {
 }
 
 .contentbox3 {
-    background-color: #eee;
-    color: navy;
-    padding: 1rem 0 0 0;
-    text-align: left;
     font-size: 1.1em;
-    line-height: 1.1em;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Verdana", sans-serif;
     margin: 1rem auto;
+    text-align: left;
+    padding: 1rem 0 0 0;
+    color: black;
 }
 
 header {
@@ -431,11 +429,6 @@ header figure.logo {
     float: right;
     display: inline-flex;
     padding: 10px;
-}
-
-.forest p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5px 5px 5px 5px;
 }
 
 
