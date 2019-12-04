@@ -438,6 +438,8 @@ table {
     border: 1px solid grey;
     border-collapse: collapse;
     box-shadow: 10px 10px 10px rgb(98, 140, 166);
+    align-content: center;
+    align-items: center;
 }
 
 thead,
@@ -501,16 +503,10 @@ tbody tr:nth-child(even) {
     display: block;
     margin-top: 0rem;
     border-radius: 10px;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     padding: 5px;
     box-shadow: 0 0 30px #333;
-    /*
-    display: flex;
-        float: right;
-
-
-    */
 }
 
 .hide {
@@ -525,62 +521,25 @@ tbody tr:nth-child(even) {
 
 /* form */
 
-.myform {
-    display: block;
-}
-
 form {
     margin: 10px;
     font-family: 'Roboto', sans-serif;
     margin-left: auto;
     margin-right: auto;
+    color: #09203f;
 }
-
-#zip,
-#name,
-#phone {
-    border-left: 5px solid red;
-}
-
-.width {
-    width: 305px;
-}
-
-legend {
-    font-size: 1.5em;
-}
-
-fieldset {
-    margin: 15px;
-    background-color: rgb(219, 219, 219);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-}
-
-input {
-    border: 1px solid black;
-    border-radius: 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(252, 252, 252);
-}
-
-label {
-    display: block;
-    margin-bottom: 20px;
-    padding: 5px;
-}
-
-
-/*  Form */
 
 form fieldset {
-    margin: 2rem 0;
+    /*
+    background-color: var(--primary);
+    margin: 15px;
+        padding: .8rem 5%;
+    */
     border: 1px solid black;
     border-radius: 10px;
-    padding: .5rem 2%;
-    background-color: var(--primary);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background-color: rgb(219, 219, 219);
 }
 
 form legend {
@@ -607,7 +566,7 @@ form label.details select {
     padding: .75rem;
     color: #01222c;
     width: 100%;
-    max-width: 20rem;
+    max-width: 18rem;
     background-color: rgb(252, 252, 252);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -617,8 +576,7 @@ form label.details,
 .flexly {
     display: block;
     padding: .75rem 0;
-    color: #09203f;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 form label.last {
@@ -665,6 +623,7 @@ input:focus {
 #ratingvalue {
     margin: 0 15px;
     padding-left: 0px;
+    color: #09203f;
 }
 
 #calendar {
