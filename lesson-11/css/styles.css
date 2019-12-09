@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Antic+Slab|Cookie|Cormorant+Garamond|Great+Vibes|Inconsolata|Karla|Lobster|Lusitana|Oswald|Sorts+Mill+Goudy");
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
 
 /* CSS Variables */
 
@@ -86,7 +87,9 @@ h2 {
     text-align: left;
     padding: 1rem 0 0 0;
     color: black;
-    font-family: "Lusitana", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-size: 500;
+    font-display: 1.7rem;
     margin: 1rem auto;
 }
 
