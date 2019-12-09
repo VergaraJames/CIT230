@@ -709,6 +709,45 @@ div.cardsww p {
     font-family: 'Inconsolata', Arial, sans-serif;
 }
 
+div.nextEvents p {
+    text-align: left;
+    color: purple;
+    font-size: 0.75rem;
+    font-family: 'Inconsolata', Arial, sans-serif;
+    line-height: normal;
+}
+
+div.nextEvents section {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 250px;
+    height: 100px;
+    border: 1px solid #000;
+    opacity: 0.8;
+    padding: 0.5rem;
+    background: radial-gradient(#eee, #e5d8c0);
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.59);
+}
+
+div.nextEvents h2 {
+    color: navy;
+    /* padding: 1rem 0 0 0;
+    */
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: 'Cormorant+Garamond', Arial, sans-serif;
+}
+
+div.nextEvents h3 {
+    color: limegreen;
+    /* padding: 1rem 0 0 0;
+    */
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: 'Verdana', Times, serif;
+}
+
 div.cardsww section {
     border-radius: .2em;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
