@@ -726,7 +726,7 @@ div.nextEvents section {
     border: 1px solid #000;
     opacity: 0.8;
     padding: 0.5rem;
-    background: radial-gradient(#eee, #e5d8c0);
+    background: radial-gradient(#eee, salmon);
     box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.59);
 }
 
