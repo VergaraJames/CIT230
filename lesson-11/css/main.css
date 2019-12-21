@@ -438,7 +438,7 @@ header figure.logo {
     right: 40px;
     left: 60px;
     width: 200px;
-    height: 240px;
+    height: auto;
     border: 1px solid #000;
     opacity: 0.8;
     padding: 0.5rem;
@@ -744,12 +744,6 @@ div.cardsww p {
     border-bottom-right-radius: 20% 15%;
     border-bottom-left-radius: 20% 15%;
     box-shadow: .5rem .5rem .5rem var(--dark);
-    border: .25rem dashed;
-    border-top-color: var(--color1);
-    border-right-color: var(--light);
-    border-bottom-color: var(--color1);
-    border-left-color: var(--light);
-    font-family: var(--font1);
     font-style: 300;
     font-weight: 500;
     line-height: 1.5;
