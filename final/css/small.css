@@ -1,0 +1,25 @@
+@media only screen and (min-width: 22em) {
+    header img {
+        max-width: 144px;
+        min-width: 100px;
+    }
+    header {
+        flex-flow: row;
+    }
+    main h2 {
+        font-size: 3em;
+    }
+    .contact .map {
+        display: flex;
+        float: left;
+        margin: 1rem;
+        width: 100%;
+        max-width: 300px;
+    }
+    .maingallery {
+        max-width: 800px;
+    }
+    .contact .map {
+        display: none;
+    }
+}

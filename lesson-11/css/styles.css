@@ -1,19 +1,38 @@
+/* fonts */
+
 @import url("https://fonts.googleapis.com/css?family=Antic+Slab|Cookie|Cormorant+Garamond|Great+Vibes|Inconsolata|Karla|Lobster|Lusitana|Oswald|Sorts+Mill+Goudy");
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Parisienne&display=swap');
 
-/* CSS Variables */
+/*  Colors  from  https://coolors.co/dddddd-e5d8c0-375b59-485665-09203f  */
 
 :root {
     --primary: #ddd;
-    --dark: #333;
+    --dark: #ccc;
     --light: #fff;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --color1: #09203f;
+    --color2: limegreen;
+    --color3: yellow;
+    --color4: #e5d8c0;
+    --color5: #375b59;
+    --color6: navy;
+    --color7: black;
+    --font1: "Barlow", sans-serif;
+    --font2: "Parisienne", cursive;
+    --font3: "Quicksand", sans-serif;
+    --font4: "Antic+Slab", cursive;
+    --font5: "Cookie", cursive;
+    --font6: "Cormorant+Garamond", cursive;
+    --font7: "Inconsolata", sans-serif;
+    --font8: "Karla", sans-serif;
+    --font9: "Oswald", sans-serif;
 }
 
 html {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    font-family: var(--font1);
+    font-style: normal;
+    font-weight: 400;
 }
 
 body {
@@ -24,8 +43,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: black;
-    font-family: "Cormorant+Garamond", sans-serif;
+    color: var(--color7);
+    font-family: var(--font6);
     display: block;
 }
 
@@ -41,9 +60,6 @@ main {
 h2 {
     padding: 10px;
     margin: 0 auto;
-    /*
-        max-width: 760px;
-        */
     text-align: center;
 }
 
@@ -69,33 +85,37 @@ h2 {
     font-size: 1em;
     line-height: 1em;
     padding: 0.5rem;
-    color: black;
-    font-family: "Cormorant+Garamond", sans-serif;
+    color: var(--color7);
+    font-family: var(--font1);
+    font-style: 800;
+    font-weight: 300;
 }
 
 .contentbox2 {
-    color: navy;
+    color: var(--color6);
     padding: 1rem 0 0 0;
     text-align: left;
-    font-size: 0.8em;
     line-height: 1.1em;
-    font-family: "Verdana", sans-serif;
+    font-family: var(--font1);
+    font-style: 800;
+    font-weight: 400;
     margin: 1rem auto;
 }
 
-.contentbox3 {
-    text-align: left;
+.contentbox3 p {
     padding: 1rem 0 0 0;
+    font-size: 1.5rem;
+    text-align: left;
     color: black;
-    font-family: "Quicksand", sans-serif;
-    font-size: 500;
-    font-display: 1.7rem;
     margin: 1rem auto;
+    font-family: var(--font1);
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 header {
-    background-color: #09203f;
-    color: #fff;
+    background-color: var(--color1);
+    color: var(--ligth);
     font-size: 1em;
     text-align: center;
     padding: 5px 0;
@@ -114,8 +134,8 @@ header {
 /* Banner Pancakes */
 
 .banner {
-    background-color: #9abcff;
-    color: #371f99;
+    background-color: var(--color4);
+    color: var(--color6);
     padding: 0.25em 0.5em 0.25em 1em;
     font-size: 1rem;
     font-weight: bold;
@@ -129,15 +149,15 @@ header {
 }
 
 .banner .fa-times:hover {
-    color: #cc9466;
+    color: var(--color3)
 }
 
 .advice {
-    background-color: #fff;
-    color: black;
+    background-color: var(--light);
+    color: var(--color7);
     font-size: 0.9em;
     padding: 5px;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font5);
     margin-top: 0px;
     margin-bottom: 10px;
     box-shadow: 0 0 30px #111;
@@ -156,20 +176,21 @@ header {
 footer {
     padding: 10px;
     border-radius: 10px;
-    background-color: #09203f;
-    font-size: 0.75em;
+    background-color: var(--color1);
     line-height: 1em;
     text-align: center;
     height: 70px;
-    color: #fff;
-    font-family: "Lusitana", sans-serif;
+    color: var(--light);
+    font-family: var(--font1);
+    font-style: regular;
+    font-weight: 200;
     margin: 1rem auto;
 }
 
 .subtitle {
     font-style: italic;
     letter-spacing: 1pt;
-    color: lawngreen;
+    color: var(--color2);
     font-size: 0.9rem;
     margin-left: 20px;
 }
@@ -177,10 +198,12 @@ footer {
 .title {
     display: grid;
     text-align: center;
+    color: var(--color2);
+    border: var(--shadow);
 }
 
 #currentdate {
-    color: #ffd600;
+    color: var(--color2);
 }
 
 
@@ -188,7 +211,7 @@ footer {
 
 nav {
     margin: 0 auto;
-    background-color: #09203f;
+    background-color: var(--color1);
 }
 
 .navigation {
@@ -207,7 +230,7 @@ nav {
 
 .navigation a {
     display: block;
-    color: #fff;
+    color: var(--light);
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
@@ -215,7 +238,7 @@ nav {
 
 .navigation a:hover {
     color: #000;
-    background-color: #fff;
+    background-color: var(--light);
     font-weight: 700;
 }
 
@@ -230,12 +253,12 @@ nav {
 
 .active {
     background-color: var(--dark);
-    color: rgb(255, 255, 255);
+    color: var(--dark);
 }
 
 .bold_Text {
     font-style: italic;
-    color: #3e689d;
+    color: var(--color6);
     font-size: 1.1rem;
 }
 
@@ -255,7 +278,7 @@ header img {
 .bodyLazy300 {
     display: block;
     text-align: center;
-    font-family: "Roboto", serif;
+    font-family: var(--font3);
     margin: 1rem auto;
 }
 
@@ -293,9 +316,11 @@ img {
 }
 
 figcaption {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: smaller;
     text-align: center;
+    font-family: var(--font1);
+    font-style: 200;
+    font-weight: 100;
+    font-size: smaller;
 }
 
 
@@ -347,15 +372,16 @@ figcaption {
 }
 
 .headings h1 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px red, 0 0 1em var(--color2), 0 0 0.2em var(--color2);
     margin: 0 0 0 17px;
 }
 
 .submitbutton {
     border: none;
-    background-color: #7c8792;
+    background-color: var(--color6);
     ;
-    color: rgb(255, 255, 255);
+    color: var(--light);
     border-radius: .5rem;
     padding: 1.5rem 2rem;
     margin: 0 0 2rem 2%;
@@ -364,7 +390,7 @@ figcaption {
 }
 
 .submitbutton:hover {
-    background-color: #505c68;
+    background-color: var(--color5);
     cursor: pointer;
 }
 
@@ -409,7 +435,6 @@ header figure.logo {
 .herodiv {
     margin: 10px auto;
     position: relative;
-    /* display: flex; */
 }
 
 .herodiv img {
@@ -455,7 +480,7 @@ table {
 
 thead,
 tfoot {
-    background-color: #7fb9c2;
+    background-color: var(--primary)
 }
 
 thead {
@@ -477,21 +502,21 @@ th {
 }
 
 #highlight {
-    background-color: #628ca6;
-    color: white;
+    background-color: var(--primary);
+    color: var(--dark);
 }
 
 tbody th {
-    background-color: #628ca6;
-    color: white;
+    background-color: var(--primary);
+    color: var(--dark);
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #e7ffed;
+    background-color: var(--color4);
 }
 
 tbody tr:nth-child(even) {
-    background-color: #e7f0ed;
+    background-color: var(--light);
 }
 
 .contact {
@@ -534,27 +559,22 @@ tbody tr:nth-child(even) {
 
 form {
     margin: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font3);
     margin-left: auto;
     margin-right: auto;
-    color: #09203f;
+    color: var(--color1);
 }
 
 form fieldset {
-    /*
-    background-color: var(--primary);
-    margin: 15px;
-        padding: .8rem 5%;
-    */
-    border: 1px solid black;
+    border: 1px solid var(--color7);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    background-color: rgb(219, 219, 219);
+    background-color: var(--color4);
 }
 
 form legend {
-    color: #09203f;
+    color: var(--color1);
     margin: 0 1rem;
     padding: 0 .5rem;
     font-size: larger;
@@ -564,7 +584,7 @@ form label.top,
 form label.details {
     display: block;
     padding-top: .3rem;
-    color: #09203f;
+    color: var(--color1);
     font-size: .9rem;
 }
 
@@ -572,13 +592,13 @@ form label.top input,
 form label.details select {
     display: block;
     font-size: 1rem;
-    border: 1px solid black;
+    border: 1px solid var(--color7);
     border-radius: 4px;
     padding: .75rem;
-    color: #01222c;
+    color: var(--color6);
     width: 100%;
     max-width: 18rem;
-    background-color: rgb(252, 252, 252);
+    background-color: var(--light);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -593,15 +613,15 @@ form label.details,
 form label.last {
     display: block;
     padding: .2rem 0;
-    color: #09203f;
+    color: var(--color1);
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font2);
 }
 
 form input.submitBtn {
     border: none;
     background-color: #09203f;
-    color: #fcfcfd;
+    color: var(--light);
     border-radius: 1rem;
     padding: .75rem .5rem;
     margin: 0 0 2rem 2%;
@@ -609,7 +629,7 @@ form input.submitBtn {
 }
 
 form input.submitBtn:hover {
-    background-color: lime;
+    background-color: var(--color2);
     cursor: pointer;
 }
 
@@ -618,11 +638,11 @@ form label.top input:required {
 }
 
 form label.top input:required:valid {
-    border-left: #079B42 solid 3px;
+    border-left: var(--color2) solid 3px;
 }
 
 input:focus {
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px var(--dark);
 }
 
 .flexly {
@@ -634,7 +654,7 @@ input:focus {
 #ratingvalue {
     margin: 0 15px;
     padding-left: 0px;
-    color: #09203f;
+    color: var(--color1);
 }
 
 #calendar {
@@ -642,7 +662,7 @@ input:focus {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: .75rem;
-    color: #09203f;
+    color: var(--color1);
 }
 
 textarea {
@@ -653,16 +673,16 @@ textarea {
 /*-------Cards Lesson 09 -----------*/
 
 div.cards h2 {
-    color: navy;
+    color: var(--color6);
     padding: 1rem 0 0 0;
     font-size: 18pt;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--font2);
 }
 
 div.cards p {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--font5);
     font-size: 0.75rem;
 }
 
@@ -681,7 +701,7 @@ div.cards {
     display: grid;
     justify-content: center;
     margin: 10px auto;
-    border: 1px dashed #000;
+    border: 1px dashed var(--color7);
     padding: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -690,33 +710,44 @@ div.cards {
 /*-------Cards Lesson 09 Weather Wind Vane --------*/
 
 div.cardsww h2 {
-    color: navy;
+    color: var(--color6);
     padding: 1rem 0 0 0;
-    font-size: 18pt;
+    font-size: 16pt;
     text-align: center;
-    font-family: 'Cormorant+Garamond', Arial, sans-serif;
+    font-family: var(--font1);
+    font-style: 700;
+    font-weight: 700;
 }
 
 div.cardsww h3 {
-    color: limegreen;
+    color: var(--color2);
     padding: 1rem 0 0 0;
+    /*
     font-size: 1.4rem;
+    */
     text-align: center;
-    font-family: 'Cookie', Times, serif;
+    font-family: var(--font1);
+    font-style: 400;
+    font-weight: 400;
 }
 
 div.cardsww p {
     text-align: center;
-    color: purple;
+    color: var(--color7);
     font-size: 0.75rem;
-    font-family: 'Inconsolata', Arial, sans-serif;
+    font-family: var(--font1);
+    font-style: 300;
+    font-weight: 300;
 }
+
+
+/*-------Next Events --------*/
 
 div.nextEvents p {
     text-align: left;
-    color: purple;
+    color: var(--color6);
     font-size: 0.75rem;
-    font-family: 'Inconsolata', Arial, sans-serif;
+    font-family: var(--font1);
     line-height: normal;
 }
 
@@ -726,29 +757,25 @@ div.nextEvents section {
     right: 15px;
     width: 250px;
     height: 100px;
-    border: 1px solid #000;
+    border: 1px solid var(--color4);
     opacity: 0.8;
     padding: 0.5rem;
-    background: radial-gradient(#eee, salmon);
+    background: radial-gradient(var(--primary), salmon);
     box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.59);
 }
 
 div.nextEvents h2 {
-    color: navy;
-    /* padding: 1rem 0 0 0;
-    */
+    color: var(--color4);
     font-size: 0.75rem;
     text-align: center;
-    font-family: 'Cormorant+Garamond', Arial, sans-serif;
+    font-family: var(--font6);
 }
 
 div.nextEvents h3 {
-    color: limegreen;
-    /* padding: 1rem 0 0 0;
-    */
+    color: var(--color3);
     font-size: 0.75rem;
     text-align: center;
-    font-family: 'Verdana', Times, serif;
+    font-family: var(--font3);
 }
 
 div.cardsww section {
@@ -768,7 +795,7 @@ div.cardsww {
     margin: 10px auto;
     border: 1px dashed #000;
     padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font5);
 }
 
 
@@ -804,7 +831,7 @@ div.cardsww {
     padding: 4px;
     width: 100px;
     background-color: #7a66cc;
-    color: white;
+    color: var(--light);
     font-weight: bold;
 }
 
@@ -812,9 +839,6 @@ div.cardsww {
     margin: 10px;
     padding: 4px;
     width: 100px;
-    /*
-    border: 1px solid #371f99;
-    */
     background-color: var(--shadow);
 }
 
@@ -822,9 +846,6 @@ div.cardsww {
     margin: 10px;
     padding: 4px;
     width: 100px;
-    /*
-    border: 1px solid #371f99;
-    */
     background-color: var(--shadow);
     font-weight: bold;
 }
@@ -837,9 +858,6 @@ div.cardsww {
     width: 100%;
     height: 100vh;
     background: greenyellow url("img/weather-raining.gif") no-repeat fixed center;
-    /*
-    background-image: url("weather-raining.gif");
-    */
     background-size: cover;
     animation: fadeOut 5s linear forwards;
     opacity: 1;
@@ -895,8 +913,7 @@ div.cardsww {
     position: absolute;
     width: 0%;
     height: 100vh;
-    background: #3E689D url("img/weather4.jpg") no-repeat fixed center;
-    /* background: #B08D74; */
+    background: blueviolet url("img/weather4.jpg") no-repeat fixed center;
     animation: go-left 3.2s cubic-bezier(.74, .06, .4, .92) forwards;
     animation-delay: 3s;
 }
@@ -916,7 +933,7 @@ div.cardsww {
 
 .loader ul li {
     display: inline-block;
-    color: #fff;
+    color: var(--light);
     font-family: Poppins;
     font-weight: bolder;
     margin: 0 8px;
@@ -990,15 +1007,16 @@ div.cardsww {
         flex: 1 1 100%;
     }
     .navigation li a {
-        /* color: yellow; */
-        background: #ddd;
+        background: var(--primary);
         display: block;
         text-decoration: none;
         padding: 0.8rem;
         text-align: center;
-        color: #333;
+        color: var(--color6);
         text-transform: uppercase;
-        font-size: 1.1rem;
+        font-family: var(--font1);
+        font-style: normal;
+        font-weight: 600;
         box-shadow: var(--shadow);
     }
     div.cards {

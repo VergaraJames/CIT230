@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="James Vergara Rincon">
+    <meta name="creation date" content="2019-12-19">
+    <meta name="description" content="CIT 230 Fall 2019 Week 11 - James Vergara">
+    <!-- Preston Data -->
+    <meta name="city_code" content="5604473">
+    <meta name="city_name" content="Preston">
+    <title>Preston Weather Page - CIT 230 Fall 2019</title>
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- CSS and JavaScripts Files -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/large.css">
+</head>
+
+<body>
+    <!-- banner Panckakes -->
+    <div><span id="banner"></span></div>
+    <!-- Title and Logo -->
+    <header>
+        <a href="../index.html"><img src="images/logo1.png" alt="logo"></a>
+        <div>
+            <h1>Weather Wind Vane</h1>
+            <div>Looking at the sky</div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <!-- Navigation Menu -->
+        <ul class="navigation responsive">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../final/index.html">Home</a></li>
+            <li class="active"> <a href="../final/preston.html">Preston</a> </li>
+            <li><a href="../final/sodaspring.html">Soda Springs</a></li>
+            <li><a href="../final/fishhaven.html">Fish Haven</a></li>
+            <li><a href="../final/stormcenter.html">Storm Center</a></li>
+            <li><a href="../final/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+        <div class="wrapper">
+            <!-- Info Section 1 -->
+            <h1>Preston Idaho</h1>
+            <section class="infoWide">
+                <div class="contentbox1">
+                    <div class="hero">
+                        <picture>
+                            <source media="(min-width: 22em) and (max-width: 40em)" srcset="images/image_600.jpg" />
+                            <source media="(min-width: 40em)" srcset="images/image_1024.jpg">
+                            <img src="images/image_Original.jpg" alt="Responsive Images.">
+                        </picture>
+                        <section class="stats">
+                            <div clas="summary">
+                                <div class="sumhead">
+                                    <h3>Weather Summary</h3>
+                                </div>
+                                <div class='column1'>
+                                    <ul>
+                                        <li>Conditions:</li>
+                                        <li>Temp (&deg;F):</li>
+                                        <li>High (&deg;F):</li>
+                                        <li>Wind Chill (&deg;F):</li>
+                                        <li>Humidity (%):</li>
+                                        <li>Wind Speed (mph):</li>
+                                    </ul>
+                                </div>
+                                <div class='column2'>
+                                    <ul>
+                                        <li id='ccondition'></li>
+                                        <li id='ctemp'></li>
+                                        <li id='htemp'></li>
+                                        <li id='wchill'></li>
+                                        <li id='humid'></li>
+                                        <li id='wspeed'></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!-- Info Section 2 -->
+            <section class="forecast">
+                <div class="contentbox2">
+                    <div class='forecast'>
+                        <div>
+                            <h3>5 Day Forecast</h3>
+                        </div>
+                        <table class='forecastable'>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="local_events">
+                        <h3>Upcoming Events</h3>
+                        <hr>
+                        <ul class='event_list'></ul>
+                    </div>
+                    <div class="news">
+                    </div>
+                </div>
+            </section>
+            <!-- Info Next Events -->
+            <div class="nextEvents"></div>
+
+            <!-- Info Section 3 -->
+            <section class="infoWide">
+                <div class="contentbox3">
+                    <img class="forest" src="images/preston2.jpg" />
+                    <h2>About Preston, Idaho</h2>
+                    <p>By: Clarence G. Judy</p>
+                    <p>
+                        Preston is a small agricultural community of Southeastern Idaho, numbering approximately four thousand people. It is the county seat of Franklin County, an area approximately 685 square miles. The city serves a total population, within the county, of
+                        nearly eight thousand.
+                        <br>
+                        <br> Preston is a part of Cache Valley which lies in the northern reaches of the Wasatch Mountain Range. On the west are Oxford and Bear River peaks and to the north and east is the Bear River Range. The state line, dividing Utah
+                        and Idaho is seven miles to the south of Preston. This boundary line is an unnatural one, and until 1872, the first settlers of Cache Valley in the Idaho area thought themselves to be within the boundaries of Utah. Preston is the
+                        second city in importance in Cache Valley, a valley widely known for its agricultural products and highly developed irrigation system.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>
+            Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span>
+        </p>
+        <p>James Vergara Rincon</p>
+    </footer>
+    <!-- JavaScript Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fin_scripts.js"></script>
+</body>
+
+</html>

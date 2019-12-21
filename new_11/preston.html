@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Preston Town Page - CIT 230 Fall 2019</title>
+    <meta name="description" content="James Vergara webpage, student in CIT 230: Web Frontend Development" />
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"></script>
+    <!--Get your own code at fontawesome.com https://www.w3schools.com/icons/icons_reference.asp -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/small.css">
+-->
+</head>
+
+<body>
+    <p class="banner clearfix hide"><i class="fas fa-times" onclick="pancakes()"></i> Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion. </p>
+
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="topbanner clearfix">
+
+            <!-- Logo -->
+            <figure class="logo">
+                <img src="images/logo.png" alt="logo" srcset="
+              images/logo1.png 1x,
+              images/logo2.png 2x,
+              images/logo3.png 3x
+            " />
+            </figure>
+            <!-- Title -->
+            <section class="headings">
+                <h1 class="title">Weather Wind Vane</h1>
+                <p class="subtitle">Looking at the sky</p>
+            </section>
+        </header>
+        <nav class="clearfix">
+            <!-- nav Menu -->
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="../lesson-11/index.html">Home</a></li>
+                <li class="active"> <a href="../lesson-11/preston.html">Preston</a> </li>
+                <li><a href="../lesson-11/sodaspring.html">Soda Spring</a></li>
+                <li><a href="../lesson-11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="../lesson-11/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson-11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="clearfix">
+            <div class="wrapper">
+                <!-- Info Section 1 -->
+                <h1>Preston Idaho</h1>
+                <section class="infoWide">
+                    <div class="contentbox1">
+                        <div class="herodiv">
+                            <picture>
+                                <source media="(min-width: 800px)" srcset="images/image_1024.jpg" />
+                                <source media="(min-width: 500px)" srcset="images/image_600.jpg" />
+                                <source media="(min-width: 300px)" srcset="images/image_200.jpg" />
+                                <img src="images/image_Original.jpg" alt="Franklin County Landscape" />
+                            </picture>
+                            <section class="stats">
+                                <h2>Weather Summary</h2>
+                                <p>Currently: <span id="description"> </span></p>
+                                <p>Temperature: <span id="temperature"> </span> &deg;F</p>
+                                <p class="windchill">
+                                    Wind Chill: <span id="windchill"> </span> &deg;F
+                                </p>
+                                <p>High: <span id="hightemp"> </span> &deg;F</p>
+                                <p>Humidity: <span id="humidity"> </span>%</p>
+                                <p>Wind Speed: <span id="windspeed"> </span> mph</p>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <!-- Info Section 2 -->
+                <section class="forecast">
+                    <div class="contentbox2">
+                        <h1>Forecast - 5 next days</h1>
+                        <div id="five-day-grid"></div>
+                    </div>
+                </section>
+                <!-- Info Next Events -->
+                <div class="nextEvents"></div>
+
+                <!-- Info Section 3 -->
+                <section class="infoWide">
+                    <div class="contentbox3">
+                        <img class="forest" src="images/preston2.jpg" />
+                        <h2>About Preston, Idaho</h2>
+                        <p>By: Clarence G. Judy</p>
+                        <p>
+                            Preston is a small agricultural community of Southeastern Idaho, numbering approximately four thousand people. It is the county seat of Franklin County, an area approximately 685 square miles. The city serves a total population, within the county, of
+                            nearly eight thousand.
+                            <br>
+                            <br> Preston is a part of Cache Valley which lies in the northern reaches of the Wasatch Mountain Range. On the west are Oxford and Bear River peaks and to the north and east is the Bear River Range. The state line, dividing
+                            Utah and Idaho is seven miles to the south of Preston. This boundary line is an unnatural one, and until 1872, the first settlers of Cache Valley in the Idaho area thought themselves to be within the boundaries of Utah. Preston
+                            is the second city in importance in Cache Valley, a valley widely known for its agricultural products and highly developed irrigation system.
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>
+                Weather Wind Vane &copy; 2019 | BYU-Idaho Online Learning - CIT 230 | Current Date: <span id="currentdate"></span>
+            </p>
+            <p>James Vergara Rincon</p>
+        </footer>
+        <!-- JavaScript Files -->
+        <script src="js/main.js"></script>
+        <script src="js/lazyloadJVR.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/towns.js"></script>
+        <script src="js/apiweatherpreston.js"></script>
+    </div>
+</body>
+
+</html>

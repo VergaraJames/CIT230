@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Steven Philips">
+    <meta name="creation date" content="2019-11-30">
+    <meta name="city_code" content="5604473">
+    <meta name="city_name" content="Preston">
+    <meta name="description" content="Steven Philips Week 11 Weather API Insertion">
+    <title>Preston Weather Page - CIT 230 Fall 2019 Week 11 - Steven Philips</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/small.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/medium.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/large.css">
+    <link rel="shortcut icon" href="../images/favicon48x48.ico">
+</head>
+
+<body>
+    <div><span id='party'></span></div>
+    <header>
+        <a href='../index.html'><img src="../images/iconfinder_applications-science_28735.png" alt="logo"></a>
+        <div>
+            <h1>6by9Weather</h1>
+            <div>Weather is the answer to life, the universe, and everything.</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#" class='urhere'>Preston</a></li>
+            <li><a href="../pages/soda_springs.html">Soda Springs</a></li>
+            <li><a href="../pages/fish_haven.html">Fish Haven</a></li>
+            <li><a href="../pages/stormcenter.html">Storm Center</a></li>
+            <li><a href="../pages/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class='hero'>
+            <picture>
+                <source srcset="../images/orange_fall_river_500.jpg" media="(min-width: 22em) and (max-width: 40em)">
+                <source srcset="../images/orange_fall_river_750.jpg" media="(min-width: 40em)">
+                <img src="../images/orange_fall_river_300.jpg" alt="Responsive Images.">
+            </picture>
+            <div class='summary'>
+                <div class='sumhead'>
+                    <h3>Weather Summary</h3>
+                </div>
+                <div class='column1'>
+                    <ul>
+                        <li>Conditions:</li>
+                        <li>Temp:</li>
+                        <li>High:</li>
+                        <li>Wind Chill:</li>
+                        <li>Humidity:</li>
+                        <li>Wind Speed:</li>
+                    </ul>
+                </div>
+                <div class='column2'>
+                    <ul>
+                        <li id='ccondition'></li>
+                        <li id='ctemp'></li>
+                        <li id='htemp'></li>
+                        <li id='wchill'></li>
+                        <li id='humid'></li>
+                        <li id='wspeed'></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class='forecast'>
+            <div>
+                <h3>5 Day Forecast</h3>
+            </div>
+            <table class='forecastable'>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="local_events">
+            <h3>Upcoming Events</h3>
+            <hr>
+            <ul class='event_list'></ul>
+        </div>
+        <div class="news">
+        </div>
+        <div class='info'>
+            <h2>Preston</h2>
+            <h3>Image and story source from Franklin County History</h3>
+            <div>
+                <img src="../images/preston_map.jpg" alt="Historical Map of Preston at the center of Franklin County">
+                <u>Name and Location</u>
+                <p>Located on the flat, at the junction of Highways 91 and 36 is the county seat of Franklin County: Preston, Idaho. Prior to 1881, the flat was known as “Worm Creek” [pronounced “crick”]. Those that settled this area were predominantly Mormon
+                    and their leadership came from the LDS Church President in Salt Lake City, Utah. The name Preston was chosen for the area in the following manner as recorded by Baltzer Peterson:</p>
+                <br>
+                <p> On May 14, 1881, a special meeting was held. Some of the Church Leaders at Salt Lake City objected to the name “Worm Creek” as pertaining to any Church Organization. They thought that a more appropriate name should be given the Ward for
+                    they were not in favor of the name “Worm” being used when it pertained to anything connected with the Church. Mrs. Rachel Porter, wife of Bishop Porter, had the privilege of suggesting the name “Preston” in honor of Bishop William
+                    B. Preston of the Cache Stake, and who later became the presiding Bishop of the Church. Thus Preston became the name of the Ward and the Community.</p>
+                <a href="http://www.franklincountyhist.org/preston.html">Continue reading...</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>&copy; <span id="thisyear"></span> 6by9Weather.com | CIT 230 | Steven Philips | <a href="terms.html">Trems
+                and Conditions</a></div>
+        <span id='currentdate'></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/master.js"></script>
+</body>
+
+</html>
