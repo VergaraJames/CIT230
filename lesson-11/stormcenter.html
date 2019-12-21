@@ -67,119 +67,81 @@
                         <fieldset>
                             <legend>Personal Information</legend>
                             <label class="top">Full Name* <br />
-                  <input
-                    type="text"
-                    name="fullname"
-                    minlength="5"
-                    pattern="[^0-9]+[a-zA-Z\s]{4,}"
-                    required
-                  /> </label
-                ><br />
-                <label class="top"
-                  >Email<br />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="someone@email.com"
-                  /> </label
-                ><br />
-                <label class="top"
-                  >Phone* <br />
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="1235551234"
-                    required
-                  /> </label
-                ><br />
-                <label class="top"
-                  >Zip Code* <br />
-                  <input type="number" name="zip" required />
-                </label>
+                <input type="text" name="fullname" minlength="5" pattern="[^0-9]+[a-zA-Z\s]{4,}" required />
+              </label><br />
+                            <label class="top">Email<br />
+                <input type="email" name="email" placeholder="someone@email.com" /> </label><br />
+                            <label class="top">Phone* <br />
+                <input type="tel" name="phone" placeholder="1235551234" required /> </label><br />
+                            <label class="top">Zip Code* <br />
+                <input type="number" name="zip" required />
+              </label>
                         </fieldset>
 
                         <fieldset>
                             <legend>Storm Details</legend>
 
-                            <label class="details">Storm Date <br /><input
-                    type="date"
-                    name="completeDate"
-                    id="calendar"
-                /></label>
+                            <label class="details">Storm Date <br /><input type="date" name="completeDate" id="calendar" /></label>
                             <br />
                             <label class="details">Storm Type
-                  <select name="stormType" id="#">
-                    <option value="">Please Select</option>
-                    <option value="preston">Flash Flood</option>
-                    <option value="fishHaven">Hail</option>
-                    <option value="sodaSprings">Hurricane</option>
-                    <option value="sodaSprings">Thunderstorm</option>
-                    <option value="sodaSprings">Tornado</option>
-                  </select>
-                </label>
+                <select name="stormType" id="#">
+                  <option value="">Please Select</option>
+                  <option value="preston">Flash Flood</option>
+                  <option value="fishHaven">Hail</option>
+                  <option value="sodaSprings">Hurricane</option>
+                  <option value="sodaSprings">Thunderstorm</option>
+                  <option value="sodaSprings">Tornado</option>
+                </select>
+              </label>
                             <br />
                             <label class="flexly" for="rating">Storm Severity (1 to 10) &nbsp;&nbsp;&nbsp;<br />
-                  <input
-                    type="range"
-                    id="rating"
-                    value="5"
-                    min="1"
-                    max="10"
-                    step="1"
-                    list="tickmarks"
-                    oninput="adjustRating(this.value)"
-                    onchange="adjustRating(this.value)"
-                  />
-                  <span id="ratingvalue"></span>
-                </label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                  oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" />
+                <span id="ratingvalue"></span>
+              </label>
                             <datalist id="tickmarks">
-                  <option value="0"> </option>
-                  <option value="1"> </option>
-                  <option value="2"> </option>
-                  <option value="3"> </option>
-                  <option value="4"> </option>
-                  <option value="5"> </option>
-                  <option value="6"> </option>
-                  <option value="7"> </option>
-                  <option value="8"> </option>
-                  <option value="9"> </option>
-                  <option value="10"> </option>
-                </datalist>
+                <option value="0"> </option>
+                <option value="1"> </option>
+                <option value="2"> </option>
+                <option value="3"> </option>
+                <option value="4"> </option>
+                <option value="5"> </option>
+                <option value="6"> </option>
+                <option value="7"> </option>
+                <option value="8"> </option>
+                <option value="9"> </option>
+                <option value="10"> </option>
+              </datalist>
                             <br />
                             <label class="details">Region
-                  <select name="region" id="region">
-                    <option value="">Select Region</option>
-                    <option value="preston">Preston</option>
-                    <option value="fishHaven">Fish Haven</option>
-                    <option value="sodaSprings">Soda Springs</option>
-                  </select>
-                </label>
+                <select name="region" id="region">
+                  <option value="">Select Region</option>
+                  <option value="preston">Preston</option>
+                  <option value="fishHaven">Fish Haven</option>
+                  <option value="sodaSprings">Soda Springs</option>
+                </select>
+              </label>
                         </fieldset>
 
                         <fieldset>
                             <legend>Are you in danger?</legend>
                             <div></div>
                             <label class="last">
-                  <input type="radio" name="audience" value="yes" />Yes
-                </label>
+                <input type="radio" name="audience" value="yes" />Yes
+              </label>
                             <label class="last">
-                  <input type="radio" name="audience" value="no" />No
-                </label>
+                <input type="radio" name="audience" value="no" />No
+              </label>
                             <label class="last">
-                  <input type="radio" name="audience" value="maybe" />Maybe
-                </label>
+                <input type="radio" name="audience" value="maybe" />Maybe
+              </label>
                         </fieldset>
 
                         <fieldset>
                             <legend>Additional Information...</legend>
                             <label for="textarea" class="last">
-                  <textarea
-                    rows="10"
-                    cols="60"
-                    type="text"
-                    placeholder="Please Type Here..."
-                  ></textarea>
-                </label>
+                <textarea rows="10" cols="60" type="text" placeholder="Please Type Here..."></textarea>
+              </label>
                         </fieldset>
                         <br />
                         <input type="submit" value="Send My Report to Storm Center" class="submitBtn" />
@@ -200,7 +162,7 @@
         <script src="js/lazyloadJVR.js"></script>
         <script src="js/currentdate.js"></script>
         <script src="js/towns.js"></script>
-        <script src="js/apiweatherpreston.js"></script>
+
     </div>
 </body>
 

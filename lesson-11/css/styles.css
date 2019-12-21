@@ -44,7 +44,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     color: var(--color7);
-    font-family: var(--font6);
+    font-family: var(--font1);
     display: block;
 }
 
@@ -133,23 +133,13 @@ header {
 
 /* Banner Pancakes */
 
-.banner {
-    background-color: var(--color4);
-    color: var(--color6);
-    padding: 0.25em 0.5em 0.25em 1em;
-    font-size: 1rem;
-    font-weight: bold;
+#banner {
+    display: flex;
+    justify-content: center;
+    background-color: red;
     text-align: center;
-}
-
-.banner .fa-times {
-    display: block;
-    float: right;
-    padding-top: 0.25em;
-}
-
-.banner .fa-times:hover {
-    color: var(--color3)
+    margin: auto;
+    line-height: 1.75rem;
 }
 
 .advice {
@@ -743,39 +733,26 @@ div.cardsww p {
 
 /*-------Next Events --------*/
 
-div.nextEvents p {
-    text-align: left;
-    color: var(--color6);
-    font-size: 0.75rem;
+.nextEvents {
+    display: block;
+    max-width: 100rem;
+    padding: 1rem;
+    margin: 1rem auto 1rem auto;
+    background-color: var(--color4);
+    border-top-left-radius: 15% 20%;
+    border-top-right-radius: 15% 20%;
+    border-bottom-right-radius: 20% 15%;
+    border-bottom-left-radius: 20% 15%;
+    box-shadow: .5rem .5rem .5rem var(--dark);
+    border: .25rem dashed;
+    border-top-color: var(--color1);
+    border-right-color: var(--light);
+    border-bottom-color: var(--color1);
+    border-left-color: var(--light);
     font-family: var(--font1);
-    line-height: normal;
-}
-
-div.nextEvents section {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    width: 250px;
-    height: 100px;
-    border: 1px solid var(--color4);
-    opacity: 0.8;
-    padding: 0.5rem;
-    background: radial-gradient(var(--primary), salmon);
-    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.59);
-}
-
-div.nextEvents h2 {
-    color: var(--color4);
-    font-size: 0.75rem;
-    text-align: center;
-    font-family: var(--font6);
-}
-
-div.nextEvents h3 {
-    color: var(--color3);
-    font-size: 0.75rem;
-    text-align: center;
-    font-family: var(--font3);
+    font-style: 400;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 div.cardsww section {
@@ -1059,7 +1036,7 @@ div.cardsww {
         padding: 5px;
     }
     .headings h1 {
-        font-size: 1.5rem;
+        font-size: 3.5rem;
     }
     .subtitle {
         letter-spacing: 0.5pt;

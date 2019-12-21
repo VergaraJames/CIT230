@@ -1,37 +1,80 @@
+// Responsive Navigation Function
 function toggleMenu() {
-    document
-        .getElementsByClassName("navigation")[0]
-        .classList.toggle("responsive");
-}
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+};
 
-function showhide() {
-    var d = new Date();
-    var s = document.getElementById(+d.getDay());
-    s.style.display = (s.style.display == 'block') ? 'none' : 'block';
-}
+//Get current year 
+var yearnow = new Date();
+document.getElementById("thisyear").innerHTML = yearnow.getFullYear();
 
-function wChill() {
-    var temp = parseFloat(document.getElementById("temperature").textContent);
-    var wSpeed = parseFloat(document.getElementById("windS").textContent);
-    var windChill =
-        35.74 + 0.6215 * temp + (0.4275 * temp - 35.75) * Math.pow(wSpeed, 0.16);
-    document.getElementById("windChill").textContent = parseInt(windChill);
-}
+//Current Date 
+const options = {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+};
+document.getElementById("currentdate").textContent = new Date().toLocaleString("en-GB", options);
 
-function pancakes() {
-    var day = new Date();
-    var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
+//Event Header - Banner Pancakes
+new Date().getDay() == 6 ? document.getElementById("banner").innerHTML = "Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion." : document.getElementById("banner").style.display = "block";
 
-    var today = weekday[day.getDay()];
-    if (today == weekday[0]) {
-        document.getElementById("advice").innerHTML =
-            "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+//Web Font Load API
+WebFont.load({
+    google: {
+        families: ["Barlow", "Parisienne", "Quicksand", "Antic+Slab", "Cookie", "Cormorant+Garamond",
+            "Inconsolata", "Karla", "Oswald"
+        ]
     }
-}
+});
+
+// Lazy Images
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadImages;
+
+    if ("IntersectionObserver" in window) {
+        lazyloadImages = document.querySelectorAll(".lazy");
+        var imageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var image = entry.target;
+                    image.src = image.dataset.src;
+                    image.classList.remove("lazy");
+                    imageObserver.unobserve(image);
+                }
+            });
+        });
+
+        lazyloadImages.forEach(function(image) {
+            imageObserver.observe(image);
+        });
+    } else {
+        var lazyloadThrottleTimeout;
+        lazyloadImages = document.querySelectorAll(".lazy");
+
+        function lazyload() {
+            if (lazyloadThrottleTimeout) {
+                clearTimeout(lazyloadThrottleTimeout);
+            }
+
+            lazyloadThrottleTimeout = setTimeout(function() {
+                var scrollTop = window.pageYOffset;
+                lazyloadImages.forEach(function(img) {
+                    if (img.offsetTop < window.innerHeight + scrollTop) {
+                        img.src = img.dataset.src;
+                        img.classList.remove("lazy");
+                    }
+                });
+                if (lazyloadImages.length == 0) {
+                    document.removeEventListener("scroll", lazyload);
+                    window.removeEventListener("resize", lazyload);
+                    window.removeEventListener("orientationChange", lazyload);
+                }
+            }, 20);
+        }
+
+        document.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+    }
+});

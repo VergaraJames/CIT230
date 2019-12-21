@@ -79,23 +79,22 @@ function nextEvents(town) {
                 //Create the H2 element and content
                 let h2 = document.createElement("h2");
                 h2.textContent = `${town.name} `;
-                //Create the H3 element and content
+                //Create the H2 element and content
                 // if (`${town.name}` == "Preston" || `${town.name}` == "Fish Haven" || `${town.name}` == "Soda Springs") {
 
                 if (`${town.name}` == "Soda Springs") {
                     //Create information blurb element
-                    let h3 = document.createElement("h3");
-                    h3.innerHTML = `Next Events`;
+                    let h2 = document.createElement("h2");
+                    h2.innerHTML = `Next Events`;
 
                     let p = document.createElement("p");
                     p.innerHTML = `<hr>
                                        ${town.events[0]},<br>
                                        ${town.events[1]},<br>
-                                       ${town.events[2]},<br>
-                                       ${town.events[3]}`;
+                                       ${town.events[2]}`;
                     //Append elements to the card
                     //card.appendChild(h2);
-                    card.appendChild(h3);
+                    card.appendChild(h2);
                     card.appendChild(p);
                     //Append finished card to the DOM
                     cardContainer.appendChild(card);
