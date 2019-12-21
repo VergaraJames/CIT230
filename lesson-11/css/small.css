@@ -1,0 +1,18 @@
+@media only screen and (min-width: 22em) {
+    header img {
+        max-width: 144px;
+        min-width: 100px;
+    }
+    header {
+        flex-flow: row;
+    }
+    main h2 {
+        font-size: 1em;
+    }
+    .grid-container {
+        max-width: 800px;
+    }
+    .contact .map {
+        display: none;
+    }
+}

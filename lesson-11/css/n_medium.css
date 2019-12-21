@@ -1,0 +1,42 @@
+    /* Medium Screen */
+
+@media only screen and (min-width: 36rem) {
+    .navigation {
+        display: flex;
+        flex-flow: row;
+        margin: auto;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+    .navigation a {
+        border-bottom-left-radius: 10% 20%;
+        border-bottom-right-radius: 10% 20%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact .map {
+        display: flex;
+        float: left;
+        margin: 1rem;
+        width: 100%;
+        max-width: 300px;
+    }
+    /*
+    .cityintro {
+        display: flex;
+        flex-direction: row;
+    }
+    div.cityintro {
+        padding: 1rem;
+    }
+    .cityinfo section:nth-child(even)>.cityintro {
+        flex-direction: row-reverse;
+    }
+}

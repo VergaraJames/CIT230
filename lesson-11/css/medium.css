@@ -1,0 +1,38 @@
+/* Medium Screen
+@media only screen and (min-width: 35em) {
+    */
+
+@media only screen and (min-width: 36rem) {
+    header img {
+        width: 100%;
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .navigation li a {
+        background: var(--primary);
+        display: block;
+        text-decoration: none;
+        padding: 0.8rem;
+        text-align: center;
+        color: var(--color6);
+        text-transform: uppercase;
+        font-family: var(--font1);
+        font-style: normal;
+        font-weight: 600;
+        box-shadow: var(--shadow);
+    }
+    div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div.cardsww {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
